@@ -2,10 +2,10 @@
 
 Un motor de búsqueda potenciado por IA con una interfaz de usuario generativa, impulsado por MALLO (MultiAgent LLM Orchestrator).
 
-![captura](/public/capture-240404_blk.png)
+![captura](/app/opengraph-image.png)
 
 > [!NOTA]
-> Por favor, ten en cuenta que pueden existir diferencias entre este repositorio y el sitio web oficial [nexusai.com](https://nexusai.com). El sitio web oficial es una bifurcación de este repositorio con características adicionales como autenticación, necesarias para proporcionar el servicio en línea. El código fuente principal de NexusAI reside en este repositorio y está diseñado para ser fácilmente construido y desplegado.
+> Por favor, ten en cuenta que pueden existir diferencias entre este repositorio y el sitio web oficial [https://nexus-ai-alpha.vercel.app/](https://nexus-ai-alpha.vercel.app/). El sitio web oficial es una bifurcación de este repositorio con características adicionales como autenticación, necesarias para proporcionar el servicio en línea. El código fuente principal de NexusAI reside en este repositorio y está diseñado para ser fácilmente construido y desplegado.
 
 ## 🗂️ Visión General
 
@@ -118,7 +118,7 @@ Aloja tu propia versión en vivo de NexusAI con Vercel o Cloudflare Pages.
 1. Abre la configuración de tu navegador.
 2. Navega a la sección de configuración del motor de búsqueda.
 3. Añade un nuevo motor de búsqueda con la siguiente URL:
-   `https://nexusai.com/search?q=%s`
+   `https://nexus-ai-alpha.vercel.app/search?q=%s`
 4. Establece NexusAI como tu motor de búsqueda predeterminado.
 
 ### Usar SearXNG como Backend de Búsqueda Alternativo
@@ -199,7 +199,7 @@ Para más detalles sobre la estructura y funcionamiento de MALLO, consulta la [d
 
 ## 📚 Documentación
 
-Para obtener información más detallada sobre la configuración, uso y personalización de NexusAI, consulta nuestra [documentación completa](https://docs.nexusai.com).
+Para obtener información más detallada sobre la configuración, uso y personalización de NexusAI, consulta nuestra [documentación completa](https://docs.nexus-ai-alpha.vercel.app/).
 
 ## 🤝 Contribución
 
