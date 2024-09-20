@@ -19,7 +19,7 @@ const description =
   'Un motor de búsqueda potenciado por IA con una interfaz de usuario generativa, impulsado por MALLO (MultiAgent LLM Orchestrator)'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nexux.sh'),
+  metadataBase: new URL('https://nexusai-lptr.onrender.com'),
   title,
   description,
   openGraph: {

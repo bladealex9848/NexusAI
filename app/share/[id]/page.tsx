@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: SharePageProps) {
   }
 
   return {
-    title: chat?.title.toString().slice(0, 50) || 'Buscador NexusAI'
+    title: chat?.title.toString().slice(0, 50) || 'Search'
   }
 }
 
