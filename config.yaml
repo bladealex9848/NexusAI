@@ -1,0 +1,1095 @@
+# Configuración de modelos locales (Ollama)
+ollama:
+  base_url: "http://localhost:11434"
+  default_model: "phi3.5:latest"
+  models:
+    - name: "gemma2:2b"
+      specialty: "general"
+      capabilities: ["compact_size", "efficient_inference"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+
+    - name: "llava:latest"
+      specialty: "multimodal"
+      capabilities: ["vision_language", "image_understanding"]
+      prompt_types: ["multimodal", "general", "visual_analysis"]
+
+    - name: "phi3.5:latest"
+      specialty: "general"
+      capabilities: ["instruction_following", "diverse_tasks"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+
+    - name: "llama3.1:latest"
+      specialty: "general"
+      capabilities: ["advanced_reasoning", "large_context"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "analytical"]
+
+    - name: "qwen2:latest"
+      specialty: "general"
+      capabilities: ["instruction_following", "chinese_language_proficiency"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+
+# Configuration de OpenAI
+openai:
+  default_model: "gpt-4o-mini"
+  models:  
+    - name: "gpt-4o-mini"
+      specialty: "general"
+      capabilities: ["fast_inference", "broad_knowledge", "multimodal_understanding"] # Assuming gpt-4o-mini supports images and potentially other modalities
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "multimodal"]
+  master_model: "gpt-4o-mini"
+
+# Configuración de Groq
+groq:
+  fast_model: "llama-3.1-8b-instant"
+  default_model: "llama-3.1-70b-versatile"
+  models:
+    - name: "llama-3.1-70b-versatile"
+      specialty: "general"
+      capabilities: ["versatile_tasks", "advanced_reasoning", "large_context"]
+      prompt_types: ["general", "legal", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "whisper-large-v3"
+      specialty: "audio_transcription"
+      capabilities: ["speech_to_text", "multi_language"]
+      prompt_types: ["audio_transcription"]
+    - name: "distil-whisper-large-v3-en"
+      specialty: "audio_transcription"
+      capabilities: ["speech_to_text", "english_optimized"]
+      prompt_types: ["audio_transcription"]
+    - name: "llama3-groq-8b-8192-tool-use-preview"
+      specialty: "general"
+      capabilities: ["tool_use", "fast_response"]
+      prompt_types: ["general", "tool_use"]
+    - name: "gemma2-9b-it"
+      specialty: "general"
+      capabilities: ["instruction_following", "medium_size", "italian_language_proficiency"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "llama3-8b-8192"
+      specialty: "general"
+      capabilities: ["fast_response", "medium_context"]
+    - name: "llama-3.1-8b-instant"
+      specialty: "general"
+      capabilities: ["instant_response", "low_latency"]
+    - name: "gemma-7b-it"
+      specialty: "general"
+      capabilities: ["instruction_following", "compact_size", "italian_language_proficiency"]
+    - name: "llama3-70b-8192"
+      specialty: "general"
+      capabilities: ["large_context", "advanced_reasoning"]
+    - name: "llava-v1.5-7b-4096-preview"
+      specialty: "multimodal"
+      capabilities: ["vision_language", "medium_size"]
+      prompt_types: ["multimodal"]
+    - name: "mixtral-8x7b-32768"
+      specialty: "general"
+      capabilities: ["large_context", "diverse_knowledge"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "llama3-groq-70b-8192-tool-use-preview"
+      specialty: "tool_use"
+      capabilities: ["advanced_reasoning", "large_context"]
+      prompt_types: ["tool_use", "general"]
+    - name: "llama-guard-3-8b"
+      specialty: "content_moderation"
+      capabilities: ["safety_checks", "fast_response"] 
+      prompt_types: ["content_moderation"]
+  max_tokens: 8000
+  temperature: 0.7
+
+# Configuración de DeepInfra
+deepinfra:
+  fast_models: "mistralai/Mistral-Nemo-Instruct-2407"
+  default_model: "mattshumer/Reflection-Llama-3.1-70B"
+  models:    
+    - name: "mistralai/Mistral-Nemo-Instruct-2407"
+      specialty: "general"
+      capabilities: ["instruction_following", "fast_response"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "meta-llama/Meta-Llama-3.1-70B-Instruct"
+      specialty: "general"
+      capabilities: ["advanced_reasoning", "large_scale"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "Qwen/Qwen2-72B-Instruct"
+      specialty: "general"
+      capabilities: ["instruction_following", "large_scale", "chinese_language_proficiency"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "microsoft/WizardLM-2-8x22B"
+      specialty: "general"
+      capabilities: ["large_scale", "diverse_tasks"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "mistralai/Mixtral-8x7B-Instruct-v0.1"
+      specialty: "general"
+      capabilities: ["instruction_following", "multi_task"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+      specialty: "general"
+      capabilities: ["instruction_optimized", "compact_size"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "Qwen/Qwen2-7B-Instruct"
+      specialty: "general"
+      capabilities: ["instruction_following", "efficient_inference"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "Gryphe/MythoMax-L2-13b"
+      specialty: "creative"
+      capabilities: ["storytelling", "imaginative_tasks"]
+      prompt_types: ["creative", "cultural"]    
+    - name: "lizpreciatior/lzlv_70b_fp16_hf"
+      specialty: "general"
+      capabilities: ["versatile_tasks", "large_scale"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "mattshumer/Reflection-Llama-3.1-70B"
+      specialty: "analytical"
+      capabilities: ["critical_thinking", "self_reflection"]
+      prompt_types: ["analytical", "philosophical", "ethical"]
+
+# Configuración de Together
+together:
+  default_model: "Qwen/Qwen2-72B-Instruct"
+  models:
+    - name: "Qwen/Qwen2-72B-Instruct"
+      specialty: "general"
+      capabilities: ["instruction_following", "large_scale", "chinese_language_proficiency"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "google/gemma-2-27b-it"
+      specialty: "general"
+      capabilities: ["instruction_tuned", "medium_scale", "italian_language_proficiency"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"
+      specialty: "general"
+      capabilities: ["fast_inference", "instruction_optimized"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "deepseek-ai/deepseek-llm-67b-chat"
+      specialty: "general"
+      capabilities: ["conversational", "large_scale"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+  max_tokens: 512
+  temperature: 0.7
+
+# Configuración de Anthropic
+anthropic:
+  fast_models: "claude-3-haiku-20240307"
+  default_model: "claude-3-haiku-20240307"
+  models:    
+    - name: "claude-3-haiku-20240307"
+      specialty: "general"
+      capabilities: ["fast_response", "concise_output"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+
+# Configuración de DeepSeek
+deepseek:
+  fast_models: "deepseek-chat"
+  default_model: "deepseek-chat"
+  models:
+    - name: "deepseek-chat"
+      specialty: "general"
+      capabilities: ["conversational", "broad_knowledge"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "deepseek-coder"
+      specialty: "coding"
+      capabilities: ["code_generation", "technical_analysis"]
+      prompt_types: ["coding"]
+
+# Configuración de OpenRouter
+openrouter:
+  fast_models: "mattshumer/reflection-70b:free"
+  default_model: "nousresearch/hermes-3-llama-3.1-405b"
+  models:
+    - name: "nousresearch/hermes-3-llama-3.1-405b"
+      specialty: "legal"
+      capabilities: [
+        "large_scale",
+        "advanced_reasoning",
+        "agentic_capabilities",
+        "roleplaying",
+        "multi_turn_conversation",
+        "long_context_coherence",
+        "user_aligned",
+        "powerful_steering",
+        "function_calling",
+        "structured_output",
+        "generalist_assistant",
+        "code_generation"
+      ]
+      prompt_types: ["general", "legal", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "creative", "analytical", "tool_use"]
+    - name: "deepseek/deepseek-chat"
+      specialty: "general"
+      capabilities: [
+        "large_scale",
+        "advanced_reasoning",
+        "agentic_capabilities",
+        "roleplaying",
+        "multi_turn_conversation",
+        "long_context_coherence",
+        "user_aligned",
+        "powerful_steering",
+        "function_calling",
+        "structured_output",
+        "generalist_assistant",
+        "code_generation"
+      ]
+      prompt_types: ["general", "legal", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "creative", "analytical", "tool_use"]
+    - name: "mattshumer/reflection-70b:free"
+      specialty: "analytical"
+      capabilities: ["critical_thinking", "self_reflection"]
+      prompt_types: ["analytical", "philosophical", "ethical"]
+    - name: "google/gemini-flash-8b-1.5-exp"
+      specialty: "general"
+      capabilities: ["fast_inference", "efficient_processing", "multilingual_support"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "google/gemini-flash-1.5-exp"
+      specialty: "general"      
+      capabilities: ["quick_responses", "broad_knowledge", "multilingual_support"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "analytical"]
+    - name: "google/gemini-pro-1.5-exp"
+      specialty: "general"
+      capabilities: ["advanced_reasoning", "multi_task", "multilingual_support"]     
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "analytical"]
+    - name: "nousresearch/hermes-3-llama-3.1-405b:extended"
+      specialty: "general"
+      capabilities: ["extended_context", "in_depth_analysis", "long_form_content_generation"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "analytical"]
+    - name: "meta-llama/llama-3.1-8b-instruct:free"
+      specialty: "general"
+      capabilities: ["instruction_following", "compact_size"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "qwen/qwen-2-7b-instruct:free"
+      specialty: "general"
+      capabilities: ["instruction_optimized", "efficient_inference", "chinese_language_proficiency"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "google/gemma-2-9b-it:free"
+      specialty: "general"
+      capabilities: ["instruction_tuned", "compact_size", "italian_language_proficiency"] 
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "mistralai/mistral-7b-instruct:free"
+      specialty: "general"
+      capabilities: ["instruction_following", "efficient_processing"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+    - name: "microsoft/phi-3-medium-128k-instruct:free"
+      specialty: "general"
+      capabilities: ["long_context", "instruction_optimized"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+  temperature: 0.7
+
+  # Configuración de Mistral
+mistral:
+  fast_models: "open-mistral-nemo"
+  default_model: "open-mistral-nemo"
+  models:
+    - name: "open-mistral-nemo"
+      specialty: "general"
+      capabilities: ["fast_inference", "instruction_following", "advanced_reasoning", "large_scale"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic", "analytical"]    
+    - name: "codestral-latest"
+      specialty: "coding"
+      capabilities: ["code_generation", "code_analysis"]
+      prompt_types: ["coding"]
+
+# Configuración de Cohere
+cohere:
+  fast_models: "command-r-plus"
+  default_model: "command-r-plus"
+  models:
+    - name: "command-r-plus"
+      specialty: "general"
+      capabilities: ["instruction_following", "diverse_tasks"]
+      prompt_types: ["general", "math", "scientific", "historical", "philosophical", "ethical", "cultural", "political", "economic"]
+
+# Configuración de prompts de análisis crítico
+critical_analysis:
+  probability: 0.2  # Probabilidad de usar el prompt de análisis crítico
+  prompts:
+    default: |
+      [Instrucción] Analiza la pregunta y la respuesta esperada siguiendo estos pasos:
+      1. Evaluación de la Pregunta:
+         a) Claridad y complejidad
+         b) Conocimientos previos necesarios
+         c) Posibles ambigüedades o malentendidos
+      2. Análisis de la Respuesta Esperada:
+         a) Precisión y corrección
+         b) Utilidad y claridad
+         c) Nivel de detalle requerido
+      3. Reformulación:
+         a) Proporciona una versión mejorada de la pregunta
+         b) Explica cómo esta nueva versión elimina ambigüedades o confusiones
+      4. Respuesta Detallada:
+         a) Proporciona una respuesta completa a la pregunta reformulada
+         b) Incluye explicaciones, ejemplos y contexto relevante
+      5. Autoevaluación:
+         a) Evalúa la calidad de la pregunta reformulada y la respuesta
+         b) Sugiere mejoras adicionales
+      6. Reflexión:
+         a) Comenta sobre cómo este análisis mejora la interacción entre humanos e IA
+         b) Discute las implicaciones más amplias de la pregunta y respuesta
+      [Respuesta Final]
+
+    math: |
+      [Instrucción] Analiza la pregunta matemática y sigue estos pasos:
+      1. Identificación de Conceptos:
+         a) Lista los conceptos matemáticos involucrados
+         b) Explica brevemente cada concepto
+      2. Evaluación de la Pregunta:
+         a) Claridad y complejidad
+         b) Conocimientos previos necesarios
+      3. Enfoque de Resolución:
+         a) Proporciona un método paso a paso para resolver el problema
+         b) Explica el razonamiento detrás de cada paso
+      4. Resolución Detallada:
+         a) Resuelve el problema mostrando todos los cálculos
+         b) Verifica el resultado final
+      5. Análisis de la Solución:
+         a) Interpreta el resultado en el contexto del problema
+         b) Discute posibles limitaciones o condiciones especiales
+      6. Extensiones:
+         a) Sugiere variaciones del problema para profundizar la comprensión
+         b) Proporciona ejemplos de aplicaciones prácticas
+      7. Recursos Adicionales:
+         a) Recomienda fuentes para aprender más sobre los conceptos involucrados
+      [Respuesta Final]
+
+    coding: |
+      [Instrucción] Analiza la pregunta de programación y sigue estos pasos:
+      1. Identificación del Problema:
+         a) Lenguaje de programación y conceptos involucrados
+         b) Requisitos funcionales y no funcionales
+      2. Evaluación de la Complejidad:
+         a) Complejidad algorítmica
+         b) Posibles desafíos de implementación
+      3. Diseño de la Solución:
+         a) Estructura de datos propuesta
+         b) Pseudocódigo o diagrama de flujo
+      4. Implementación:
+         a) Código completo y comentado
+         b) Explicación detallada de cada parte del código
+      5. Pruebas y Depuración:
+         a) Casos de prueba (incluyendo casos límite)
+         b) Técnicas de depuración recomendadas
+      6. Optimización:
+         a) Análisis de eficiencia (tiempo y espacio)
+         b) Sugerencias de optimización
+      7. Mejores Prácticas:
+         a) Discusión sobre estilo de código y convenciones
+         b) Consideraciones de mantenibilidad y escalabilidad
+      8. Recursos y Referencias:
+         a) Documentación relevante
+         b) Bibliotecas o frameworks útiles
+      [Respuesta Final]
+
+    legal: |
+      [Instrucción] Analiza la pregunta legal y sigue estos pasos:
+      1. Identificación del Área Legal:
+         a) Rama del derecho involucrada
+         b) Jurisdicción relevante
+      2. Análisis de los Hechos:
+         a) Hechos relevantes presentados
+         b) Información adicional necesaria
+      3. Identificación de Cuestiones Legales:
+         a) Principales cuestiones legales a abordar
+         b) Leyes, estatutos o precedentes aplicables
+      4. Investigación Legal:
+         a) Citas de leyes relevantes
+         b) Casos precedentes aplicables
+      5. Análisis Legal:
+         a) Aplicación de la ley a los hechos
+         b) Argumentos a favor y en contra
+      6. Conclusión y Recomendaciones:
+         a) Opinión legal fundamentada
+         b) Posibles cursos de acción
+      7. Consideraciones Éticas:
+         a) Implicaciones éticas de la situación
+         b) Responsabilidades profesionales relevantes
+      8. Recursos Adicionales:
+         a) Referencias a fuentes legales autorizadas
+         b) Sugerencias para consulta profesional si es necesario
+      [Respuesta Final]
+
+    scientific: |
+      [Instrucción] Analiza la pregunta científica y sigue estos pasos:
+      1. Identificación del Campo Científico:
+         a) Disciplina(s) científica(s) involucrada(s)
+         b) Conceptos clave relacionados
+      2. Contextualización:
+         a) Antecedentes históricos relevantes
+         b) Estado actual del conocimiento en el área
+      3. Análisis de la Pregunta:
+         a) Hipótesis implícita o explícita
+         b) Variables involucradas (dependientes e independientes)
+      4. Metodología:
+         a) Diseño experimental apropiado
+         b) Técnicas de recolección de datos
+      5. Análisis de Datos:
+         a) Métodos estadísticos aplicables
+         b) Interpretación de resultados
+      6. Discusión:
+         a) Implicaciones de los hallazgos
+         b) Limitaciones del estudio
+      7. Conclusiones:
+         a) Resumen de los hallazgos principales
+         b) Sugerencias para investigación futura
+      8. Impacto y Aplicaciones:
+         a) Relevancia para el campo de estudio
+         b) Posibles aplicaciones prácticas
+      9. Referencias y Recursos:
+         a) Fuentes científicas relevantes
+         b) Bases de datos o herramientas recomendadas
+      [Respuesta Final]
+
+    historical: |
+      [Instrucción] Analiza la pregunta histórica y sigue estos pasos:
+      1. Contextualización:
+         a) Período histórico relevante
+         b) Eventos clave relacionados
+      2. Análisis de Fuentes:
+         a) Fuentes primarias disponibles
+         b) Fuentes secundarias relevantes
+      3. Perspectivas Históricas:
+         a) Diferentes interpretaciones del evento o período
+         b) Debates historiográficos relevantes
+      4. Análisis Causal:
+         a) Factores que llevaron al evento o situación
+         b) Consecuencias a corto y largo plazo
+      5. Comparación Histórica:
+         a) Similitudes con otros eventos o períodos
+         b) Diferencias únicas del caso en cuestión
+      6. Impacto Cultural y Social:
+         a) Efectos en la sociedad de la época
+         b) Influencia en períodos posteriores
+      7. Evaluación Crítica:
+         a) Fiabilidad y sesgos de las fuentes
+         b) Limitaciones en nuestro conocimiento actual
+      8. Relevancia Contemporánea:
+         a) Conexiones con situaciones actuales
+         b) Lecciones aplicables al presente
+      9. Recursos Adicionales:
+         a) Lecturas recomendadas para profundizar
+         b) Archivos o museos relevantes
+      [Respuesta Final]
+
+    philosophical: |
+      [Instrucción] Analiza la pregunta filosófica y sigue estos pasos:
+      1. Identificación del Área Filosófica:
+         a) Rama de la filosofía involucrada
+         b) Conceptos filosóficos clave
+      2. Contextualización Histórica:
+         a) Origen y evolución del problema filosófico
+         b) Filósofos importantes que han abordado la cuestión
+      3. Análisis Conceptual:
+         a) Definición y clarificación de términos clave
+         b) Identificación de supuestos subyacentes
+      4. Argumentación:
+         a) Principales argumentos a favor y en contra
+         b) Análisis lógico de los argumentos
+      5. Escuelas de Pensamiento:
+         a) Diferentes perspectivas filosóficas sobre el tema
+         b) Comparación y contraste de estas perspectivas
+      6. Implicaciones:
+         a) Consecuencias lógicas de diferentes posiciones
+         b) Implicaciones éticas o prácticas
+      7. Conexiones Interdisciplinarias:
+         a) Relaciones con otras áreas del conocimiento
+         b) Aplicaciones en campos no filosóficos
+      8. Evaluación Crítica:
+         a) Fortalezas y debilidades de las diferentes posiciones
+         b) Propuesta de síntesis o nueva perspectiva
+      9. Reflexión Personal:
+         a) Invitación a la reflexión del lector
+         b) Preguntas abiertas para consideración futura
+      10. Recursos Adicionales:
+          a) Obras filosóficas clave sobre el tema
+          b) Recursos en línea para exploración adicional
+      [Respuesta Final]
+
+    ethical: |
+      [Instrucción] Analiza la cuestión ética y sigue estos pasos:
+      1. Identificación del Dilema Ético:
+         a) Descripción clara del problema ético
+         b) Partes interesadas involucradas
+      2. Principios Éticos Relevantes:
+         a) Identificación de principios éticos aplicables
+         b) Posibles conflictos entre principios
+      3. Análisis desde Diferentes Teorías Éticas:
+         a) Perspectiva utilitarista
+         b) Perspectiva deontológica
+         c) Ética de la virtud
+         d) Otras teorías éticas relevantes
+      4. Contexto y Circunstancias:
+         a) Factores contextuales importantes
+         b) Consideraciones culturales o sociales
+      5. Consecuencias:
+         a) Resultados potenciales de diferentes cursos de acción
+         b) Impacto a corto y largo plazo
+      6. Análisis de Alternativas:
+         a) Diferentes opciones de acción
+         b) Pros y contras de cada opción
+      7. Precedentes y Casos Similares:
+         a) Ejemplos históricos o contemporáneos relevantes
+         b) Cómo se han resuelto casos similares
+      8. Recomendación Ética:
+         a) Curso de acción propuesto
+         b) Justificación ética detallada
+      9. Implicaciones más Amplias:
+         a) Impacto potencial en políticas o prácticas
+         b) Consideraciones para futuros dilemas similares
+      10. Reflexión y Diálogo:
+          a) Preguntas para estimular la reflexión ética
+          b) Sugerencias para facilitar el diálogo ético
+      [Respuesta Final]
+
+    colombian_context: |
+      [Instrucción] Analiza la pregunta sobre el contexto colombiano y sigue estos pasos:
+      1. Identificación del Tema:
+        a) Región o ciudad específica de Colombia involucrada
+        b) Aspecto particular del contexto colombiano (geografía, historia, sociedad, etc.)
+      2. Contextualización:
+        a) Información general relevante sobre Colombia
+        b) Datos específicos sobre la región o tema en cuestión
+      3. Análisis Histórico:
+        a) Antecedentes históricos relevantes
+        b) Evolución del tema a lo largo del tiempo
+      4. Impacto Social y Cultural:
+        a) Influencia en la sociedad colombiana
+        b) Aspectos culturales relacionados
+      5. Perspectivas Actuales:
+        a) Situación actual del tema
+        b) Debates o controversias relacionadas
+      6. Comparación:
+        a) Similitudes y diferencias con otras regiones de Colombia
+        b) Contexto en relación con otros países latinoamericanos
+      7. Fuentes de Información:
+        a) Recursos académicos colombianos relevantes
+        b) Datos oficiales y estudios locales
+      8. Reflexión:
+        a) Importancia del tema para Colombia
+        b) Posibles desarrollos futuros
+      [Respuesta Final]
+
+    cultural: |
+      [Instrucción] Analiza la pregunta sobre cultura colombiana y sigue estos pasos:
+      1. Identificación del Elemento Cultural:
+        a) Tipo de expresión cultural (música, arte, literatura, gastronomía, etc.)
+        b) Origen y contexto histórico
+      2. Descripción Detallada:
+        a) Características principales
+        b) Variaciones regionales si aplica
+      3. Significado e Importancia:
+        a) Valor cultural y simbólico
+        b) Papel en la identidad colombiana
+      4. Evolución y Cambios:
+        a) Transformaciones a lo largo del tiempo
+        b) Influencias externas e internas
+      5. Expresiones Contemporáneas:
+        a) Formas actuales de manifestación
+        b) Adaptaciones modernas
+      6. Preservación y Promoción:
+        a) Esfuerzos de conservación
+        b) Políticas culturales relacionadas
+      7. Impacto Global:
+        a) Reconocimiento internacional
+        b) Influencia en otras culturas
+      8. Recursos y Referencias:
+        a) Artistas o exponentes destacados
+        b) Eventos o lugares relacionados
+      [Respuesta Final]
+
+    political: |
+      [Instrucción] Analiza la pregunta sobre política colombiana y sigue estos pasos:
+      1. Contexto Político:
+        a) Sistema político de Colombia
+        b) Estructura de gobierno relevante
+      2. Tema Específico:
+        a) Identificación del asunto político en cuestión
+        b) Actores políticos involucrados
+      3. Antecedentes Históricos:
+        a) Evolución histórica del tema
+        b) Eventos clave relacionados
+      4. Marco Legal:
+        a) Leyes y regulaciones relevantes
+        b) Aspectos constitucionales si aplica
+      5. Debate Actual:
+        a) Diferentes posturas y argumentos
+        b) Controversias o discusiones en curso
+      6. Impacto Social:
+        a) Efectos en la sociedad colombiana
+        b) Reacciones de diferentes grupos sociales
+      7. Análisis Comparativo:
+        a) Situación en otros países latinoamericanos
+        b) Estándares internacionales si aplica
+      8. Prospectiva:
+        a) Posibles desarrollos futuros
+        b) Implicaciones a largo plazo
+      [Respuesta Final]
+
+    economic: |
+      [Instrucción] Analiza la pregunta sobre economía colombiana y sigue estos pasos:
+      1. Contexto Económico:
+        a) Situación económica general de Colombia
+        b) Indicadores económicos relevantes
+      2. Tema Específico:
+        a) Identificación del asunto económico en cuestión
+        b) Sectores o industrias involucradas
+      3. Análisis Histórico:
+        a) Evolución del tema en la economía colombiana
+        b) Políticas económicas pasadas relevantes
+      4. Marco Regulatorio:
+        a) Leyes y regulaciones económicas aplicables
+        b) Instituciones económicas involucradas
+      5. Impacto Social:
+        a) Efectos en diferentes grupos socioeconómicos
+        b) Implicaciones para el empleo y el desarrollo
+      6. Perspectiva Internacional:
+        a) Comparación con otros países de la región
+        b) Influencia de factores económicos globales
+      7. Desafíos y Oportunidades:
+        a) Principales retos económicos
+        b) Áreas de potencial crecimiento o mejora
+      8. Proyecciones:
+        a) Tendencias económicas a corto y mediano plazo
+        b) Recomendaciones de expertos económicos
+      [Respuesta Final]
+
+    general: |
+      [Instrucción] Analiza la pregunta y la respuesta de manera general siguiendo estos pasos:
+      1. Comprensión de la Pregunta:
+         a) Identifica el tema principal y subtemas
+         b) Determina el tipo de información solicitada
+      2. Evaluación de la Respuesta:
+         a) Precisión y relevancia de la información proporcionada
+         b) Estructura y claridad de la explicación
+      3. Análisis de Fuentes:
+         a) Credibilidad y diversidad de las fuentes utilizadas
+         b) Actualidad de la información
+      4. Pensamiento Crítico:
+         a) Identifica posibles sesgos o suposiciones
+         b) Evalúa la lógica y coherencia de los argumentos
+      5. Contextualización:
+         a) Relaciona la información con un contexto más amplio
+         b) Considera implicaciones o aplicaciones prácticas
+      6. Síntesis y Conclusión:
+         a) Resume los puntos clave de la respuesta
+         b) Proporciona una conclusión general sobre la calidad y utilidad de la respuesta
+      [Respuesta Final]
+
+    audio_transcription: |
+      [Instrucción] Analiza la transcripción de audio siguiendo estos pasos:
+      1. Precisión de la Transcripción:
+         a) Evalúa la exactitud de las palabras transcritas
+         b) Identifica posibles errores o malentendidos
+      2. Calidad del Audio Original:
+         a) Determina si hay indicios de problemas en la calidad del audio
+         b) Identifica desafíos como ruido de fondo o múltiples hablantes
+      3. Contexto y Contenido:
+         a) Analiza el tema principal y subtemas de la transcripción
+         b) Evalúa la coherencia y flujo del discurso
+      4. Identificación de Hablantes:
+         a) Determina si se han distinguido correctamente diferentes hablantes
+         b) Evalúa la consistencia en la atribución de diálogos
+      5. Elementos No Verbales:
+         a) Identifica si se han capturado elementos como pausas, énfasis o emociones
+         b) Evalúa la importancia de estos elementos para el significado general
+      6. Formato y Presentación:
+         a) Analiza la estructura y organización de la transcripción
+         b) Evalúa la facilidad de lectura y comprensión
+      7. Recomendaciones:
+         a) Sugiere mejoras para la transcripción
+         b) Proporciona consejos para futuras transcripciones
+      [Respuesta Final]
+
+    multimodal: |
+      [Instrucción] Analiza la respuesta multimodal (texto e imagen) siguiendo estos pasos:
+      1. Análisis del Componente Textual:
+         a) Evalúa la claridad y coherencia del texto
+         b) Identifica los puntos clave y argumentos principales
+      2. Análisis del Componente Visual:
+         a) Describe los elementos principales de la imagen
+         b) Evalúa la calidad y relevancia de la imagen
+      3. Integración Texto-Imagen:
+         a) Analiza cómo el texto y la imagen se complementan
+         b) Identifica cualquier discrepancia o contradicción
+      4. Impacto Comunicativo:
+         a) Evalúa la efectividad del mensaje combinado
+         b) Considera el impacto emocional o persuasivo
+      5. Accesibilidad y Claridad:
+         a) Determina si la información es accesible para diferentes audiencias
+         b) Sugiere mejoras para aumentar la claridad del mensaje
+      6. Contexto y Relevancia:
+         a) Analiza la adecuación al contexto o tema tratado
+         b) Evalúa la actualidad y pertinencia de la información
+      7. Aspectos Técnicos:
+         a) Comenta sobre la calidad técnica de la imagen
+         b) Evalúa el formato y presentación general
+      8. Recomendaciones:
+         a) Proporciona sugerencias para mejorar la respuesta multimodal
+         b) Identifica áreas potenciales para expandir o clarificar
+      [Respuesta Final]
+
+    tool_use: |
+      [Instrucción] Analiza el uso de herramientas en la respuesta siguiendo estos pasos:
+      1. Identificación de Herramientas:
+         a) Enumera las herramientas o APIs utilizadas
+         b) Evalúa la relevancia de cada herramienta para la tarea
+      2. Eficacia de Uso:
+         a) Analiza cómo se aplicó cada herramienta
+         b) Evalúa si se aprovecharon todas las capacidades relevantes
+      3. Integración:
+         a) Examina cómo se combinaron los resultados de diferentes herramientas
+         b) Evalúa la coherencia de la integración en la respuesta final
+      4. Precisión y Confiabilidad:
+         a) Verifica la exactitud de los resultados obtenidos de las herramientas
+         b) Evalúa la confiabilidad de las fuentes o datos utilizados
+      5. Eficiencia:
+         a) Analiza si el uso de herramientas mejoró la eficiencia de la respuesta
+         b) Identifica cualquier redundancia o uso innecesario de herramientas
+      6. Limitaciones:
+         a) Reconoce las limitaciones de las herramientas utilizadas
+         b) Sugiere herramientas adicionales que podrían haber sido útiles
+      7. Ética y Seguridad:
+         a) Evalúa cualquier consideración ética en el uso de las herramientas
+         b) Comenta sobre la seguridad y privacidad de los datos utilizados
+      8. Recomendaciones:
+         a) Proporciona sugerencias para mejorar el uso de herramientas en futuras tareas
+         b) Sugiere formas de optimizar el flujo de trabajo con las herramientas
+      [Respuesta Final]
+
+    content_moderation: |
+      [Instrucción] Analiza la moderación de contenido realizada siguiendo estos pasos:
+      1. Identificación de Contenido Problemático:
+         a) Enumera los elementos de contenido identificados como potencialmente problemáticos
+         b) Evalúa la precisión de la identificación
+      2. Aplicación de Políticas:
+         a) Analiza cómo se aplicaron las políticas de moderación
+         b) Evalúa la consistencia en la aplicación de las reglas
+      3. Contexto y Nuances:
+         a) Examina cómo se consideró el contexto en las decisiones de moderación
+         b) Evalúa la sensibilidad a matices culturales o lingüísticos
+      4. Falsos Positivos y Negativos:
+         a) Identifica posibles casos de contenido erróneamente marcado o pasado por alto
+         b) Analiza las implicaciones de estos errores
+      5. Transparencia:
+         a) Evalúa la claridad en la explicación de las decisiones de moderación
+         b) Analiza la disponibilidad de información sobre el proceso de moderación
+      6. Impacto:
+         a) Considera el impacto de las decisiones de moderación en la discusión general
+         b) Evalúa el equilibrio entre seguridad y libertad de expresión
+      7. Tecnología vs. Moderación Humana:
+         a) Analiza el uso de herramientas automatizadas vs. revisión humana
+         b) Evalúa la eficacia de este enfoque
+      8. Recomendaciones:
+         a) Sugiere mejoras en el proceso de moderación
+         b) Propone estrategias para manejar casos difíciles o ambiguos
+      [Respuesta Final]
+
+    creative: |
+      [Instrucción] Analiza el contenido creativo siguiendo estos pasos:
+      1. Originalidad:
+         a) Evalúa el grado de novedad y unicidad del contenido
+         b) Identifica elementos innovadores o inesperados
+      2. Calidad Artística:
+         a) Analiza la destreza técnica demostrada
+         b) Evalúa el uso efectivo de elementos estilísticos
+      3. Impacto Emocional:
+         a) Describe las emociones o sensaciones evocadas
+         b) Analiza la efectividad en generar una respuesta emocional
+      4. Coherencia y Estructura:
+         a) Examina la organización y flujo del contenido
+         b) Evalúa cómo los diferentes elementos se complementan entre sí
+      5. Relevancia y Significado:
+         a) Analiza el mensaje o tema subyacente
+         b) Evalúa la relevancia para el público objetivo
+      6. Uso de Recursos Creativos:
+         a) Identifica el uso de metáforas, simbolismo, o técnicas narrativas
+         b) Evalúa la efectividad de estos recursos
+      7. Contexto Cultural:
+         a) Considera cómo el contenido se relaciona con su contexto cultural
+         b) Analiza cualquier referencia o influencia cultural
+      8. Innovación Técnica:
+         a) Evalúa el uso de técnicas o tecnologías innovadoras
+         b) Analiza cómo estas contribuyen al resultado final
+      9. Recomendaciones:
+         a) Sugiere áreas de mejora o expansión
+         b) Propone formas de potenciar los elementos más fuertes
+      [Respuesta Final]
+
+    analytical: |
+      [Instrucción] Realiza un análisis crítico siguiendo estos pasos:
+      1. Identificación del Problema:
+         a) Define claramente el problema o cuestión a analizar
+         b) Identifica los componentes clave del problema
+      2. Recopilación de Datos:
+         a) Evalúa la calidad y relevancia de los datos presentados
+         b) Identifica cualquier brecha en la información proporcionada
+      3. Análisis de Argumentos:
+         a) Descompone los argumentos principales
+         b) Evalúa la lógica y coherencia de cada argumento
+      4. Evidencia y Razonamiento:
+         a) Examina la evidencia utilizada para respaldar las afirmaciones
+         b) Evalúa la solidez del razonamiento empleado
+      5. Perspectivas Alternativas:
+         a) Identifica puntos de vista alternativos o contrapuestos
+         b) Analiza la fuerza relativa de estas perspectivas
+      6. Suposiciones y Sesgos:
+         a) Identifica suposiciones subyacentes en el análisis
+         b) Evalúa posibles sesgos en la presentación de la información
+      7. Implicaciones y Consecuencias:
+         a) Considera las implicaciones a corto y largo plazo
+         b) Analiza las posibles consecuencias de diferentes cursos de acción
+      8. Síntesis y Conclusiones:
+         a) Sintetiza los hallazgos clave del análisis
+         b) Formula conclusiones basadas en la evidencia y el razonamiento
+      9. Recomendaciones:
+         a) Propone soluciones o acciones basadas en el análisis
+         b) Sugiere áreas para investigación o análisis adicional
+      [Respuesta Final]
+
+# Configuración de asistentes especializados
+specialized_assistants:
+  - id: "asst_F33bnQzBVqQLcjveUTC14GaM"
+    name: "Asistente especializado en transformación digital"
+    keywords: ["transformación digital", "tecnología", "innovación", "estrategia digital", "cambio organizacional", "procesos digitales", "automatización", "inteligencia artificial", "big data", "analítica", "ciberseguridad", "nube", "IoT", "experiencia del cliente", "transformación cultural", "capacitación", "gestión del cambio", "liderazgo digital", "infraestructura tecnológica", "estrategias de marketing", "transformación empresarial", "tecnologías emergentes", "transformación sectorial", "transformación educativa", "transformación gubernamental", "legaltech", "fintech", "healthtech", "agrotech", "edtech", "retailtech", "industria 4.0", "smart cities", "transformación sostenible", "transformación inclusiva", "transformación resiliente", "transformación ética", "transformación global", "transformación local", "transformación personal", "transformación social", "transformación económica", "transformación política", "transformación cultural", "transformación educativa", "transformación ambiental", "transformación tecnológica", "transformación digital en Colombia", "transformación digital en América Latina", "transformación digital en el mundo", "transformación digital en la empresa", "transformación digital en el gobierno", "transformación digital en la educación", "transformación digital en la salud", "transformación digital en la justicia", "transformación digital en la banca", "transformación digital en la industria", "transformación digital en el comercio", "transformación digital en la agricultura", "transformación digital en la energía", "transformación digital en el transporte", "transformación digital en la logística", "transformación digital en la manufactura", "transformación digital en la construcción", "transformación digital en el turismo", "transformación digital en la cultura", "transformación digital en el deporte", "transformación digital en la moda", "transformación digital en la música", "transformación digital en el cine", "transformación digital en la televisión", "transformación digital en la literatura", "transformación digital en las artes", "transformación digital en la ciencia", "transformación digital en la tecnología", "transformación digital en la innovación", "transformación digital en la creatividad", "transformación digital en la comunicación", "transformación digital en la información", "transformación digital en la educación", "transformación digital en la salud", "transformación digital en la justicia", "transformación digital en la banca", "transformación digital en la industria", "transformación digital en el comercio", "transformación digital en la agricultura", "transformación digital en la energía", "transformación digital en el transporte", "transformación digital en la logística", "transformación digital en la manufactura", "transformación digital en la construcción", "transformación digital"]
+  - id: "asst_MzMayuSJV8AhP6vacv2ee3Xx"
+    name: "Asistente de Inteligencia Artificial"
+    keywords: [
+        "inteligencia artificial",
+        "asistente virtual",
+        "conocimiento",
+        "respuesta efectiva",
+        "interacción",
+        "aprendizaje automático",
+        "motivación",
+        "curiosidad",
+        "ayuda",
+        "orientación",
+        "generación de ideas",
+        "colaboración",
+        "análisis",
+        "resolución de problemas",
+        "creatividad",
+        "multidisciplinario",
+        "comunicación",
+        "recursos",
+        "gestión del conocimiento",
+        "experiencia compartida",
+        "precisión",
+        "eficiencia",
+        "adaptabilidad",
+        "soporte",
+        "consultas"
+    ]
+  - id: "asst_RfRNo5Ij76ieg7mV11CqYV9v"
+    name: "Asistente Virtual de Inteligencia Artificial"
+    keywords: [
+        "asistente virtual",
+        "inteligencia artificial",
+        "conocimiento amplio",
+        "tecnología",
+        "ciencia",
+        "arte",
+        "historia",
+        "cultura general",
+        "aprendizaje",
+        "curiosidad",
+        "respuestas educativas",
+        "información precisa",
+        "formato Markdown",
+        "interactividad",
+        "ayuda",
+        "paciencia",
+        "adaptabilidad",
+        "etica",
+        "mejora continua",
+        "asistencia personalizada",
+        "comunicación clara",
+        "usuarios",
+        "tareas",
+        "consultas"
+    ]
+  - id: "asst_gRTtnBm9jH8VUhAG20l1RBo1"
+    name: "Experto en Vigilancia Judicial"
+    keywords: [
+        "vigilancia judicial administrativa",
+        "autonomía",
+        "garantía",
+        "acuerdos",
+        "ACUERDO No. PSAA11-8716",
+        "protocolos",
+        "vigiláncia judicial",
+        "aplicación",
+        "vigilancia",
+        "eficiencia",
+        "vigilancia judicial",
+        "vigiláncia judicial administrativa",
+        "celeridad",
+        "responsabilidades",
+        "moralidad",
+        "supervisión",
+        "directrices",
+        "vigiláncia",
+        "servicio judicial",
+        "eficacia",
+        "CIRCULAR PCSJC17-43 de 2017",
+        "independencia",
+        "Ley 270 de 1996",
+        "consejo",
+        "normas"
+    ]
+  - id: "asst_gpCZlh5HpWgGAjHqbzFaaVpp"
+    name: "Experto en Constitución Colombiana"
+    keywords: ["constitución", "Colombia", "derechos fundamentales", "normativa", "cambio político", "principios constitucionales", "jurisprudencia", "mecanismos de tutela", "democracia", "tutela", "derechos", "libertades", "carta magna", "preámbulo", "organización del Estado", "derechos humanos", "poder judicial", "constitucionalidad", "reforma", "poder público", "representación", "participación ciudadana", "vida", "integridad", "libertad de expresión", "derecho al trabajo", "educación", "salud", "protección del medio ambiente", "igualdad"]
+  - id: "asst_dQhjl00QPrJrJDYrwhfE0gBX"
+    name: "ProcesAI CGP" 
+    keywords: ["Código General del Proceso", "Teoría General del Proceso", "derecho procesal", "justicia", "Colombia", "leyes", "litigio", "derechos", "procedimientos", "actuación procesal", "normatividad", "garantías procesales", "principios procesales", "Ley 2213 de 2022", "Decreto 806 de 2020", "Devis Echandía", "jurisprudencia"]
+  - id: "asst_bbeLTquUNR8yFS1IVeeFff68"
+    name: "ColDisBot - Agente de Derecho Disciplinario Colombiano" 
+    keywords: ["derecho disciplinario", "Colombia", "sanciones", "faltas disciplinarias", "procedimientos disciplinarios", "Ley 734 de 2002", "Ley 1952 de 2019", "Ley 2094 de 2021", "Decreto 1081 de 2015", "sujetos disciplinables", "garantías procesales", "falta", "sanción", "proceso disciplinario", "normativa disciplinaria", "justicia administrativa", "código disciplinario", "transparencia", "ética administrativa", "responsabilidad disciplinaria", "tutela de derechos fundamentales"]
+  - id: "asst_u0MhHeXqHiDztxdLLYrQeeQr"
+    name: "Parte Especial de los Delitos en Particular" 
+    keywords: ["Código Penal", "delitos", "parte especial", "capítulos", "artículos", "tipo penal", "responsabilidad", "infracciones", "sanciones", "tipificación", "penalizaciones", "delitos comunes", "delitos especiales", "agresión", "robo", "homicidio", "estupro", "violencia", "tráfico de drogas", "fraude", "cohecho", "corrupción", "delitos económicos", "delitos contra la vida", "delitos contra el patrimonio", "delitos sexuales", "delitos informáticos", "delitos contra la libertad", "delitos contra la integridad", "delitos contra la administración pública"]
+  - id: "asst_XA5fS0wvyifI3afm1TnRooEQ"
+    name: "Experto en Reclasificaciones" 
+    keywords: ["reclasificación", "experiencia", "análisis", "documentación", "validación", "comparación", "duplicación", "aportaciones", "estudios", "revisión meticulosa", "datos actualizados", "etapas", "validación de información", "evaluación exhaustiva", "proceso", "categorías", "metodología", "documentos", "información previa", "nuevos aportes", "información relevante", "estudios reportados"]
+  - id: "asst_Y0zt3gjDRD1T0ZBuyJpMB48R"
+    name: "Asesor Ético Educativo Colombiano"
+    keywords: ["ética", "educación", "Colombia", "normativas", "legislación", "prácticas éticas", "conflictos de interés", "dilemas morales", "comportamiento inapropiado", "instituciones educativas", "profesores", "administradores", "ambiente seguro", "respeto", "guía", "asesoramiento", "cumplimiento", "situaciones éticas", "análisis de casos", "recomendaciones", "mejores prácticas", "códigos deontológicos", "formación", "prevención", "bienestar", "transparencia"]
+  - id: "asst_hd43w2kRFA7VWNxIBy9Mgy8j"
+    name: "Guía de Resiliencia y Manifestación"
+    keywords: ["resiliencia", "manifestación", "apoyo emocional", "autodescubrimiento", "adaptación", "crecimiento personal", "visualización", "afirmaciones", "motivación", "superación", "cambio", "autoconocimiento", "estrategias", "bienestar", "mentalidad positiva", "sueños", "objetivos", "empoderamiento", "conexiones", "fábulas", "moralejas", "técnicas de manifestación", "flexibilidad", "transformación"]
+  - id: "asst_1AWeWoJvYpz7DpYvlaNb0pgk"
+    name: "Guía Tributaria Colombia"
+    keywords: ["impuestos", "DIAN", "recaudo", "devoluciones", "gestión de cartera", "obligaciones fiscales", "declaraciones tributarias", "regímenes especiales", "agentes de retención", "regímenes tributarios especiales", "cumplimiento fiscal", "mecanismos de recaudo", "obligaciones formales", "emprendimiento", "ejercicio de derechos", "normativa tributaria", "asesoramiento tributario", "planificación fiscal", "contribuyentes", "diligencia", "responsabilidad tributaria", "declaración de renta", "impuestos nacionales", "impuestos locales"]
+  - id: "asst_iHVYk93ksnQKHuN02XIktkMT"
+    name: "Artífice de Palabras"
+    keywords: ["copywriting", "redacción", "escritura creativa", "optimización de contenidos", "SEO", "gramática", "ortografía", "estilo", "técnicas narrativas", "persuasión", "contenido digital", "artículos", "blogging", "redacción publicitaria", "creación de copys", "edición", "mejora de textos", "estrategia de contenidos", "análisis de audiencia", "tono de voz", "revisión de textos", "contenido atractivo", "estructura de texto", "eficacia comunicativa", "imágenes hiperrealistas"]
+  - id: "asst_PAYD2AmBDTTat7F8bpFxOvXg"
+    name: "Asistente Profesional de Alexander"
+    keywords: ["Alexander", "Alexander Oviedo", "Alexander Oviedo Fadul"]
+  - id: "asst_g62x4oFzLFqB2Ncmj5YlDbBr"
+    name: "Asistente Lingüístico"
+    keywords: ["gramática", "vocabulario", "uso del idioma", "redacción", "escritura", "pronunciación", "comprensión", "estilo", "sinónimos", "antónimos", "expresiones idiomáticas", "análisis de textos", "corrrección", "claridad", "coherencia", "contexto", "lengua inglesa", "lenguaje técnico", "comunicación efectiva", "conversación", "ayuda con tareas", "recursos lingüísticos", "referencias gramaticales", "respuestas precisas", "energía positiva"]
+  - id: "asst_eYvjSdxv1VUA1Su9zQ07oyoO"
+    name: "Asistente de Análisis Documental"
+    keywords: ["análisis", "documentación", "traducción", "procesamiento de textos", "revisión", "edición", "estrategia de contenido", "optimización", "comprensión lingüística", "categorías", "estructura de documentos", "resumen", "interpretación", "comparación", "validación de información", "minuciosidad", "información precisa", "búsqueda", "gestión de datos", "apoyo administrativo", "creación de informes", "análisis crítico", "lenguaje claro", "apoyo en proyectos", "documentos en inglés", "documentos en español"]  
+  - id: "asst_HP2cp1DT2LItd1tl6o4Bggma"
+    name: "Asistente espacializado en JusticIALab"
+    keywords: ["innovación", "Rama Judicial", "transformación digital", "propuestas", "evaluación", "creatividad", "soluciones tecnológicas", "gestión judicial", "expedientes electrónicos", "servicios digitales", "participación", "concursos", "necesidades judiciales", "criterios de evaluación", "incentivos", "apoyo a la gestión", "sistemas de información", "proyectos colaborativos", "mejora continua", "eficiencia", "transparencia", "acceso a la justicia", "desarrollo institucional"]
+  - id: "asst_TKhi6U5Cwp0XUO51d2PYp8Pz"
+    name: "Asistente Experto en Gestión Documental Judicial"
+    keywords: ["gestión de documentos electrónicos", "digitalización", "expedientes electrónicos", "autenticidad", "integridad", "disposición final", "firmas electrónicas", "protocolos", "metadatos", "estructura de carpetas", "nomenclatura de archivos", "escaneo de documentos", "tablas de retención documental", "calidad documental", "ciclo de vida", "control de versiones", "acceso remoto", "almacenamiento seguro", "mejores prácticas", "servicios de la Rama Judicial"]
+  - id: "asst_Jq3qTXZkvpCdn7jcoeNJmDbF"
+    name: "Asesor Legal en Salud Colombiano"
+    keywords: ["responsabilidad médica", "negligencia médica", "consentimiento informado", "historia clínica", "derechos de los pacientes", "deberes de los profesionales de la salud", "bioética", "bioderecho", "jurisprudencia colombiana", "normas del sector salud", "ética médica", "procesos de reclamación", "guías clínicas", "tatamiento integral", "accesibilidad en salud", "derechos fundamentales en salud", "calidad del servicio de salud", "seguridad del paciente", "mala práctica médica", "responsabilidad civil médica"]
+  - id: "asst_U2RDKhpEi2anWNKrzaGfY0y9"
+    name: "Asesor Legal Anticorrupción Colombiano"
+    keywords: ["corrupción", "ética judicial", "cohecho", "concusión", "peculado", "contratación estatal", "corrupción tributaria", "corrupción electoral", "corrupción judicial", "corrupción privada", "transparencia", "integridad", "derechos de los usuarios", "Plan Anticorrupción", "Carta de Trato Digno", "canales de denuncia", "mecanismos de control", "legislación colombiana", "procedimientos judiciales", "últimas modificaciones legislativas"]
+
+
+# Configuración general
+general:
+  default_language: "es"
+  max_tokens: 1000
+  temperature: 0.7
+
+# Prioridad de procesamiento
+processing_priority:
+  - groq
+  - openrouter
+  - deepinfra    
+  - deepseek
+  - specialized_assistants
+  - moa    
+  - together
+  - openai  
+  - anthropic 
+  - cohere  
+  - mistral
+  - ollama
+
+# Configuración de utilidades
+utilities:
+  web_search:
+    enabled: true
+    max_results: 5
+  image_analysis:
+    enabled: false
+    model: "llava:latest"
+  file_handling:
+    enabled: true
+    allowed_extensions: [".txt", ".pdf", ".docx"]
+
+# Configuración de la interfaz de usuario
+ui:
+  page_title: "MALLO: MultiAgent LLM Orchestrator"
+  page_icon: "🤖"
+  layout: "wide"
+
+# Configuración de registro y depuración
+logging:
+  level: "INFO"
+  file: "mallo.log"
+
+# Configuración de caché
+cache:
+  enabled: true
+  expiration: 3600  # en segundos
+
+# Configuración de límites de uso
+usage_limits:
+  max_queries_per_day: 1000
+  max_tokens_per_query: 4000
+
+# Configuración de MOA (Mixture of Agents)
+moa:
+  enabled: true
+  aggregator_model: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+  proposal_models:
+    - "Qwen/Qwen2-72B-Instruct"
+    - "google/gemma-2-27b-it"
+    - "zero-one-ai/Yi-34B-Chat"
+    - "deepseek-ai/deepseek-llm-67b-chat"
+  max_layers: 3
+  aggregator_system_prompt: "You are an expert aggregator. Synthesize the following responses into a single, coherent answer, taking into account the web context if provided."
+
+# Umbrales de complejidad
+thresholds:
+  moa_complexity: 0.8  # Umbral para activar MOA
+  local_complexity: 0.5  # Umbral para usar modelos locales
+  web_search_complexity: 0.4  # Umbral para activar búsqueda web
+  api_complexity: 0.7  # Umbral para activar API externa
+  synthesis_complexity: 0.6  # Umbral para activar síntesis final
+
+utilities:
+  web_search:
+    enabled: true
+    max_results: 5
+
+# Configuración de evaluación de modelos
+evaluation_models:
+  initial:
+    api: "groq"
+    model: "llama-3.1-70b-versatile"
+    backup_api: "openrouter"
+    backup_model: "mattshumer/reflection-70b:free"
+    backup_api2: "openai"
+    backup_model2: "gpt-4o-mini"    
+  final:
+    api: "openrouter"
+    model: "nousresearch/hermes-3-llama-3.1-405b"
+    backup_api: "openrouter"
+    backup_model: "mattshumer/reflection-70b:free"
+    backup_api2: "deepseek"
+    backup_model2: "deepseek-chat"
+  meta_analysis:
+    api: "deepseek"
+    model: "deepseek-chat"
+    backup_api: "openrouter"
+    backup_model: "nousresearch/hermes-3-llama-3.1-405b"
+    backup_api2: "groq"
+    backup_model2: "llama-3.1-70b-versatile"
+
+# Configuración de selección de prompts para los agentes
+prompt_selection:
+  default_model: "cohere:command-r-plus"  # Modelo por defecto para selección de prompt
+  fallback_type: "default"  # Tipo de prompt a usar si no se puede determinar
+  threshold: 0.6  # Umbral de confianza para la selección automática
+
+# Configuración de selección de agentes
+agent_selection:
+  default_model: "cohere:command-r-plus"
+  fallback_type: "Asistente de Inteligencia Artificial"
+  threshold: 0.6
+  validation_model: "command-r-plus"

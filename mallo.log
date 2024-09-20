@@ -1,0 +1,1022 @@
+2024-09-10 09:06:38,447 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 09:06:40,033 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 09:06:43,387 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 09:06:45,324 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269933407039226148860065165462909878451&bing_market=wt-WT&ex=-1 200 42498
+2024-09-10 09:06:47,524 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 09:06:49,004 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-10 09:06:50,891 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 09:06:53,233 - ERROR - Error checking Mistral API: name 'Mistral' is not defined
+2024-09-10 09:06:54,575 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 09:06:54,590 - ERROR - Error checking OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 09:06:54,591 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': True, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': True, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 09:06:56,657 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 09:06:56,657 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,657 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,657 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,657 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,657 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 09:06:56,657 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,657 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,657 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,657 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,658 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 09:06:56,658 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,658 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,658 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,658 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,658 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 09:06:56,658 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,658 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,658 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,658 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,658 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 09:06:56,658 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,658 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,658 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,658 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,658 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 09:06:56,658 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,659 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,659 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,659 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,659 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 09:06:56,659 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,659 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,659 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,659 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,659 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 09:06:56,659 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,659 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,659 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,659 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,659 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 09:06:56,659 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,659 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,659 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,659 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,659 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 09:06:56,660 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,660 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,660 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,660 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,660 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 09:06:56,660 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,660 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,660 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,660 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,660 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 09:06:56,661 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,661 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,661 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,661 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,661 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 09:06:56,662 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,662 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,662 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,662 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,662 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 09:06:56,662 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,662 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,662 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,662 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:56,662 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 09:06:56,662 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 09:06:56,662 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 09:06:56,662 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 09:06:56,662 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 09:06:57,406 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 09:06:57,452 - ERROR - Se ha producido un error inesperado: name 'Mistral' is not defined
+2024-09-10 10:35:37,115 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 10:35:38,531 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:35:42,620 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A8DA253460>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 10:35:43,667 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 10:35:45,513 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269933365206756350478079961307198394019&bing_market=wt-WT&ex=-1 200 43703
+2024-09-10 10:35:47,246 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:35:48,853 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-10 10:35:50,702 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:35:53,591 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 10:35:55,101 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 10:35:55,104 - ERROR - Error checking OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 10:35:55,105 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': True, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 10:35:59,205 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 10:35:59,216 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 10:35:59,216 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,216 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,216 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,216 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,216 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 10:35:59,216 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,216 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,216 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,216 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,217 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 10:35:59,217 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,217 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,217 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,217 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,217 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 10:35:59,217 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,217 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,217 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,217 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,217 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 10:35:59,217 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,217 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,217 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,217 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,217 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 10:35:59,217 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,218 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,218 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,218 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,218 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 10:35:59,218 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,218 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,218 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,218 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,218 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 10:35:59,218 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,218 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,218 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,218 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,218 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 10:35:59,218 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,218 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,218 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,218 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,219 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 10:35:59,219 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,219 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,219 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,219 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,219 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 10:35:59,219 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,219 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,219 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,219 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,219 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 10:35:59,219 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,219 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,219 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,219 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,219 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 10:35:59,219 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,219 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,219 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,220 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,220 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 10:35:59,220 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,220 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,220 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,220 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:35:59,220 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 10:35:59,220 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:35:59,220 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:35:59,220 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:35:59,220 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:00,005 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:31,289 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 10:36:32,310 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:36,396 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A8DA27C160>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 10:36:37,121 - INFO - response: https://duckduckgo.com/ 200 18336
+2024-09-10 10:36:38,621 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269933365206756350478079961307198394019&bing_market=wt-WT&ex=-1 200 43277
+2024-09-10 10:36:40,187 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:41,513 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-10 10:36:42,557 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:45,254 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 10:36:46,325 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 10:36:46,328 - ERROR - Error checking OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 10:36:46,328 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': True, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 10:36:50,411 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 10:36:50,411 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 10:36:50,411 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,411 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,411 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,411 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,411 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 10:36:50,411 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,411 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,411 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,412 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,412 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 10:36:50,412 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,412 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,412 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,412 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,412 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 10:36:50,412 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,412 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,412 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,412 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,412 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 10:36:50,412 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,412 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,412 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,412 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,412 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 10:36:50,412 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,412 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,413 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,413 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,413 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 10:36:50,413 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,413 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,469 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,470 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,470 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 10:36:50,470 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,470 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,470 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,471 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,471 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 10:36:50,471 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,471 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,471 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,472 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,472 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 10:36:50,472 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,472 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,472 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,473 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,473 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 10:36:50,473 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,473 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,473 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,473 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,474 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 10:36:50,474 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,474 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,474 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,474 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,475 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 10:36:50,475 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,475 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,475 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,475 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,476 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 10:36:50,476 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,476 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,476 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,476 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:50,477 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 10:36:50,477 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:36:50,477 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:36:50,477 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:36:50,477 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:36:51,531 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:51,621 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 10:36:51,621 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 10:36:57,153 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:36:57,155 - INFO - Query processed by api:gpt-4o-mini in 5.53 seconds
+2024-09-10 10:36:57,990 - INFO - response: https://duckduckgo.com/ 200 18021
+2024-09-10 10:36:59,626 - INFO - response: https://links.duckduckgo.com/d.js?q=%C2%BFQue+numero+es+mayor+entre+9.9+y+9.11%3F&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-316727275900213318763586993328637276650&bing_market=wt-WT&ex=-1 200 40458
+2024-09-10 10:36:59,629 - ERROR - Error al procesar con OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 10:36:59,629 - ERROR - Error processing query with openrouter:mattshumer/reflection-70b:free: Error en la respuesta: Error al procesar con OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 10:36:59,629 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 10:37:01,359 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:37:01,360 - INFO - Query processed by api:gpt-4o-mini in 1.73 seconds
+2024-09-10 10:37:01,361 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 10:37:01,361 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 10:37:04,139 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:37:04,140 - INFO - Query processed by api:gpt-4o-mini in 2.78 seconds
+2024-09-10 10:37:04,140 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 10:37:04,141 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 10:37:08,628 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:37:08,629 - INFO - Query processed by api:gpt-4o-mini in 4.49 seconds
+2024-09-10 10:37:08,629 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 10:37:08,629 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 10:37:09,679 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:37:09,681 - INFO - Query processed by api:gpt-4o-mini in 1.05 seconds
+2024-09-10 10:39:18,903 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 10:39:20,046 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:39:24,127 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A8D76DAEF0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 10:39:24,970 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 10:39:26,543 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269933365206756350478079961307198394019&bing_market=wt-WT&ex=-1 200 33470
+2024-09-10 10:39:27,737 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:39:28,777 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-10 10:39:29,816 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:39:32,545 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 10:39:33,249 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 10:39:33,251 - ERROR - Error checking OpenRouter API: 'st.secrets has no key "OPENROUTER_API_KEY". Did you forget to add it to secrets.toml or the app settings on Streamlit Cloud? More info: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management'
+2024-09-10 10:39:33,251 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': True, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 10:39:37,330 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 10:39:37,330 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 10:39:37,330 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,330 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,330 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,330 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,330 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 10:39:37,330 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,330 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,330 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,331 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,331 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 10:39:37,331 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,331 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,331 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,331 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,331 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 10:39:37,331 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,331 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,331 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,331 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,331 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 10:39:37,332 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,332 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,332 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,332 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,332 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 10:39:37,332 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,332 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,332 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,332 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,332 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 10:39:37,333 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,333 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,333 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,333 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,333 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 10:39:37,333 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,333 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,333 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,333 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,333 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 10:39:37,334 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,334 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,334 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,334 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,334 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 10:39:37,334 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,334 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,334 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,334 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,334 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 10:39:37,335 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,335 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,335 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,335 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,335 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 10:39:37,335 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,335 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,335 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,335 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,335 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 10:39:37,336 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,336 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,336 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,336 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,336 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 10:39:37,336 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,336 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,336 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,336 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:37,336 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 10:39:37,337 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:39:37,337 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:39:37,337 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:39:37,337 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:39:38,281 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 10:41:12,371 - ERROR - Error checking OpenAI API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:12,378 - ERROR - Error checking Groq API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:16,477 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E110C3A230>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 10:41:17,283 - INFO - response: https://duckduckgo.com/ 200 18379
+2024-09-10 10:41:18,842 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269933365206756350478079961307198394019&bing_market=wt-WT&ex=-1 200 14667
+2024-09-10 10:41:18,845 - ERROR - Error checking DeepInfra API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,847 - ERROR - Error checking Anthropic API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,848 - ERROR - Error checking DeepSeek API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,849 - ERROR - Error checking Mistral API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,851 - ERROR - Error checking Cohere API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,852 - ERROR - Error checking OpenRouter API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 10:41:18,852 - INFO - System status: {'OpenAI API': False, 'Groq API': False, 'Local Models': False, 'Web Search': True, 'DeepInfra API': False, 'Anthropic API': False, 'DeepSeek API': False, 'Mistral API': False, 'Cohere API': False, 'OpenRouter API': False}
+2024-09-10 10:41:22,934 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 10:41:22,935 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 10:41:22,935 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,935 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,935 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,935 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,935 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 10:41:22,935 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,935 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,935 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,935 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,935 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 10:41:22,936 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,936 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,936 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,936 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,936 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 10:41:22,936 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,936 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,936 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,936 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,936 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 10:41:22,936 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,936 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,936 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,936 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,936 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 10:41:22,936 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,936 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,937 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,937 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,937 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 10:41:22,937 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,937 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,937 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,937 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,937 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 10:41:22,937 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,937 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,937 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,937 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,938 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 10:41:22,938 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,938 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,938 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,938 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,938 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 10:41:22,938 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,938 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,938 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,938 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,938 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 10:41:22,938 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,938 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,938 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,939 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,939 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 10:41:22,939 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,939 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,939 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,939 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,939 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 10:41:22,939 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,939 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,939 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,939 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,939 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 10:41:22,939 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,939 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,939 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,939 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,939 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 10:41:22,939 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 10:41:22,940 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 10:41:22,940 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 10:41:22,940 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 10:41:22,941 - ERROR - Se ha producido un error inesperado: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:03:56,742 - ERROR - Error checking OpenAI API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:03:56,775 - ERROR - Error checking Groq API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:01,193 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E110C3BB80>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:04:02,053 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 11:04:03,610 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 22035
+2024-09-10 11:04:03,631 - ERROR - Error checking DeepInfra API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,636 - ERROR - Error checking Anthropic API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,638 - ERROR - Error checking DeepSeek API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,642 - ERROR - Error checking Mistral API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,652 - ERROR - Error checking Cohere API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,655 - ERROR - Error checking OpenRouter API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:04:03,657 - INFO - System status: {'OpenAI API': False, 'Groq API': False, 'Local Models': False, 'Web Search': True, 'DeepInfra API': False, 'Anthropic API': False, 'DeepSeek API': False, 'Mistral API': False, 'Cohere API': False, 'OpenRouter API': False}
+2024-09-10 11:04:07,752 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:04:07,755 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:04:07,755 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,757 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,757 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,758 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,758 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:04:07,758 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,758 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,758 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,758 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,758 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:04:07,758 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,758 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,759 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,759 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,759 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:04:07,759 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,759 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,759 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,759 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,759 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:04:07,759 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,759 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,759 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,759 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,759 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:04:07,759 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,759 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,760 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,760 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,760 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:04:07,760 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,760 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,760 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,760 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,760 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:04:07,760 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,760 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,760 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,760 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,760 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:04:07,760 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,760 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,760 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,760 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,760 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:04:07,760 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,761 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,761 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,762 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,762 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:04:07,762 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,762 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,762 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,762 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,763 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:04:07,763 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,763 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,763 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,763 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,763 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:04:07,763 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,763 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,763 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,763 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,764 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:04:07,764 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,764 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,764 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,764 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,764 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:04:07,764 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:04:07,764 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:04:07,764 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:04:07,764 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:04:07,766 - ERROR - Se ha producido un error inesperado: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:38,067 - ERROR - Error checking OpenAI API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:38,079 - ERROR - Error checking Groq API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:42,225 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E110C3AB90>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:08:44,375 - INFO - response: https://duckduckgo.com/ 200 18379
+2024-09-10 11:08:46,036 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 14131
+2024-09-10 11:08:46,046 - ERROR - Error checking DeepInfra API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,048 - ERROR - Error checking Anthropic API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,049 - ERROR - Error checking DeepSeek API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,052 - ERROR - Error checking Mistral API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,054 - ERROR - Error checking Cohere API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,056 - ERROR - Error checking OpenRouter API: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:08:46,057 - INFO - System status: {'OpenAI API': False, 'Groq API': False, 'Local Models': False, 'Web Search': True, 'DeepInfra API': False, 'Anthropic API': False, 'DeepSeek API': False, 'Mistral API': False, 'Cohere API': False, 'OpenRouter API': False}
+2024-09-10 11:08:50,149 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:08:50,150 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:08:50,150 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,150 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,150 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,150 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,151 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:08:50,151 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,151 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,151 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,151 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,151 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:08:50,151 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,151 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,151 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,151 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,151 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:08:50,151 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,151 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,151 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,152 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,152 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:08:50,152 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,152 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,152 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,152 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,152 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:08:50,152 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,152 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,153 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,153 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,153 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:08:50,153 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,153 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,153 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,153 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,153 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:08:50,153 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,153 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,153 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,153 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,153 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:08:50,153 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,154 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,154 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,154 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,154 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:08:50,268 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,268 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,268 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,268 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,268 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:08:50,268 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,270 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,270 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,271 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,273 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:08:50,273 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,273 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,273 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,274 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,274 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:08:50,274 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,275 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,276 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,276 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,276 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:08:50,276 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,276 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,276 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,276 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,276 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:08:50,276 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:08:50,276 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:08:50,276 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:08:50,277 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:08:50,280 - ERROR - Se ha producido un error inesperado: No secrets files found. Valid paths for a secrets.toml file are: C:\Users\DELL\.streamlit\secrets.toml, D:\Users\DELL\Documents\GitHub\MALLO\.streamlit\secrets.toml
+2024-09-10 11:09:54,463 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 11:09:56,541 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:10:00,653 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E11352E0E0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:10:01,405 - INFO - response: https://duckduckgo.com/ 200 18334
+2024-09-10 11:10:03,077 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 43575
+2024-09-10 11:10:05,088 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:10:06,171 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2024-09-10 11:10:06,172 - ERROR - Error checking Anthropic API: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2024-09-10 11:10:07,992 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:10:11,072 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 11:10:12,339 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 11:10:12,344 - ERROR - Error checking OpenRouter API: 'OPENROUTER_API_KEY'
+2024-09-10 11:10:12,344 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': False, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 11:10:16,436 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:10:16,436 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:10:16,436 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,436 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,436 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,436 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,437 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:10:16,437 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,437 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,437 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,437 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,437 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:10:16,437 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,437 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,437 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,437 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,437 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:10:16,438 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,438 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,438 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,438 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,438 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:10:16,438 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,438 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,438 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,438 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,438 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:10:16,438 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,438 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,438 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,438 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,438 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:10:16,438 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,439 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,439 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,439 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,439 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:10:16,439 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,439 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,439 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,439 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,439 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:10:16,439 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,439 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,439 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,439 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,439 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:10:16,439 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,439 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,440 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,440 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,440 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:10:16,440 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,440 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,440 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,440 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,440 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:10:16,440 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,440 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,440 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,440 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,440 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:10:16,440 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,440 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,440 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,440 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,441 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:10:16,441 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,441 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,441 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,441 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:16,441 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:10:16,441 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:10:16,441 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:10:16,441 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:10:16,441 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:10:17,596 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:15:14,108 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 11:15:15,741 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:15:20,095 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E11355FF70>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:15:21,080 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 11:15:22,531 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 25173
+2024-09-10 11:15:24,176 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:15:25,102 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2024-09-10 11:15:25,107 - ERROR - Error checking Anthropic API: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2024-09-10 11:15:26,225 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:15:29,141 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 11:15:30,784 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 11:15:30,814 - ERROR - Error checking OpenRouter API: 'OPENROUTER_API_KEY'
+2024-09-10 11:15:30,815 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': False, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': False}
+2024-09-10 11:15:34,909 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:15:34,915 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:15:34,916 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,916 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,916 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,916 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,916 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:15:34,916 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,917 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,917 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,917 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,917 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:15:34,917 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,917 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,917 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,917 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,917 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:15:34,917 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,917 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,918 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,918 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,918 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:15:34,918 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,918 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,918 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,918 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,918 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:15:34,918 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,919 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,919 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,919 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,919 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:15:34,919 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,919 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,920 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,920 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,920 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:15:34,920 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,920 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,920 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,920 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,920 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:15:34,921 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,921 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,921 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,921 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,921 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:15:34,921 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,921 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,921 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,921 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,921 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:15:34,922 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,922 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,922 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,922 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,922 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:15:34,923 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,923 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,923 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,923 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,923 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:15:34,923 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,923 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,923 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,923 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,924 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:15:34,924 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,924 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,924 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,924 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:34,924 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:15:34,924 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:15:34,924 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:15:34,924 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:15:34,924 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:15:35,988 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:17:29,297 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 11:17:30,236 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:17:34,315 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E1135221A0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:17:35,462 - INFO - response: https://duckduckgo.com/ 200 18336
+2024-09-10 11:17:36,920 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 44178
+2024-09-10 11:17:38,276 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:17:38,938 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2024-09-10 11:17:38,940 - ERROR - Error checking Anthropic API: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2024-09-10 11:17:40,077 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:17:44,075 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 11:17:44,729 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 11:17:48,069 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': False, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': True}
+2024-09-10 11:17:52,142 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:17:52,144 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:17:52,144 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,145 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,145 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,145 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,146 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:17:52,146 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,146 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,146 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,146 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,146 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:17:52,146 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,146 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,147 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,147 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,147 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:17:52,147 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,147 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,147 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,147 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,147 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:17:52,147 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,147 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,147 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,147 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,147 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:17:52,147 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,147 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,147 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,147 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,147 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:17:52,148 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,148 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,148 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,148 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,148 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:17:52,148 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,148 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,148 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,148 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,148 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:17:52,148 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,148 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,148 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,148 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,148 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:17:52,148 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,148 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,148 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,148 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,149 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:17:52,149 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,149 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,149 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,149 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,149 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:17:52,149 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,149 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,149 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,149 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,149 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:17:52,149 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,149 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,149 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,149 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,149 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:17:52,149 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,149 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,150 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,150 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,150 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:17:52,150 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:17:52,150 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:17:52,150 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:17:52,150 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:17:52,951 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:15,169 - INFO - HTTP Request: GET https://api.openai.com/v1/models "HTTP/1.1 200 OK"
+2024-09-10 11:19:16,427 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:20,485 - ERROR - Error checking local models: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E11355DA80>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+2024-09-10 11:19:22,275 - INFO - response: https://duckduckgo.com/ 200 18335
+2024-09-10 11:19:23,808 - INFO - response: https://links.duckduckgo.com/d.js?q=test&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-269934322282959612221093379697319755091&bing_market=wt-WT&ex=-1 200 14430
+2024-09-10 11:19:24,888 - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:25,567 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2024-09-10 11:19:25,567 - ERROR - Error checking Anthropic API: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2024-09-10 11:19:26,713 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:32,080 - ERROR - Error checking Mistral API: 'function' object has no attribute 'complete'
+2024-09-10 11:19:32,698 - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
+2024-09-10 11:19:37,268 - INFO - System status: {'OpenAI API': True, 'Groq API': True, 'Local Models': False, 'Web Search': True, 'DeepInfra API': True, 'Anthropic API': False, 'DeepSeek API': True, 'Mistral API': False, 'Cohere API': True, 'OpenRouter API': True}
+2024-09-10 11:19:41,347 - WARNING - No se pudieron obtener los modelos de Ollama
+2024-09-10 11:19:41,347 - ERROR - Error processing query with api:gpt-4o-mini: 'openai'
+2024-09-10 11:19:41,347 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,347 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,347 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,347 - WARNING - Model api:gpt-4o-mini is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,347 - ERROR - Error processing query with groq:llama3-8b-8192: Respuesta inválida del agente groq:llama3-8b-8192
+2024-09-10 11:19:41,347 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,347 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,347 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,348 - WARNING - Model groq:llama3-8b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,348 - ERROR - Error processing query with groq:gemma-7b-it: Respuesta inválida del agente groq:gemma-7b-it
+2024-09-10 11:19:41,348 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,348 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,348 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,348 - WARNING - Model groq:gemma-7b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,348 - ERROR - Error processing query with groq:llama3-groq-70b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-70b-8192-tool-use-preview
+2024-09-10 11:19:41,348 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,348 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,348 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,348 - WARNING - Model groq:llama3-groq-70b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,348 - ERROR - Error processing query with groq:llama-guard-3-8b: Respuesta inválida del agente groq:llama-guard-3-8b
+2024-09-10 11:19:41,348 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,348 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,348 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,348 - WARNING - Model groq:llama-guard-3-8b is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,348 - ERROR - Error processing query with groq:gemma2-9b-it: Respuesta inválida del agente groq:gemma2-9b-it
+2024-09-10 11:19:41,348 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,348 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,349 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,349 - WARNING - Model groq:gemma2-9b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,349 - ERROR - Error processing query with groq:llama-3.1-8b-instant: Respuesta inválida del agente groq:llama-3.1-8b-instant
+2024-09-10 11:19:41,349 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,349 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,349 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,349 - WARNING - Model groq:llama-3.1-8b-instant is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,349 - ERROR - Error processing query with groq:mixtral-8x7b-32768: Respuesta inválida del agente groq:mixtral-8x7b-32768
+2024-09-10 11:19:41,349 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,349 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,349 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,349 - WARNING - Model groq:mixtral-8x7b-32768 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,349 - ERROR - Error processing query with groq:llama3-groq-8b-8192-tool-use-preview: Respuesta inválida del agente groq:llama3-groq-8b-8192-tool-use-preview
+2024-09-10 11:19:41,349 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,349 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,349 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,349 - WARNING - Model groq:llama3-groq-8b-8192-tool-use-preview is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,349 - ERROR - Error processing query with groq:llama-3.1-70b-versatile: Respuesta inválida del agente groq:llama-3.1-70b-versatile
+2024-09-10 11:19:41,350 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,350 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,350 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,350 - WARNING - Model groq:llama-3.1-70b-versatile is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,350 - ERROR - Error processing query with groq:llama3-70b-8192: Respuesta inválida del agente groq:llama3-70b-8192
+2024-09-10 11:19:41,350 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,350 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,350 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,350 - WARNING - Model groq:llama3-70b-8192 is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,350 - ERROR - Error processing query with together:Qwen/Qwen2-72B-Instruct: Respuesta inválida del agente together:Qwen/Qwen2-72B-Instruct
+2024-09-10 11:19:41,350 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,350 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,350 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,350 - WARNING - Model together:Qwen/Qwen2-72B-Instruct is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,350 - ERROR - Error processing query with together:google/gemma-2-27b-it: Respuesta inválida del agente together:google/gemma-2-27b-it
+2024-09-10 11:19:41,350 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,350 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,350 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,351 - WARNING - Model together:google/gemma-2-27b-it is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,351 - ERROR - Error processing query with together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo: Respuesta inválida del agente together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+2024-09-10 11:19:41,351 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,351 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,351 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,351 - WARNING - Model together:meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:41,351 - ERROR - Error processing query with together:deepseek-ai/deepseek-llm-67b-chat: Respuesta inválida del agente together:deepseek-ai/deepseek-llm-67b-chat
+2024-09-10 11:19:41,351 - INFO - Attempting fallback with local:phi3.5:latest
+2024-09-10 11:19:41,351 - ERROR - Error processing query with local:phi3.5:latest: No se pudo procesar la consulta con el agente seleccionado: local
+2024-09-10 11:19:41,351 - ERROR - Fallback agent is the same as the failed agent. Aborting fallback.
+2024-09-10 11:19:41,351 - WARNING - Model together:deepseek-ai/deepseek-llm-67b-chat is not available: Failed to process query after 1 fallback attempts
+2024-09-10 11:19:42,850 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:43,024 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 11:19:43,024 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 11:19:48,754 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:19:48,756 - INFO - Query processed by api:gpt-4o-mini in 5.73 seconds
+2024-09-10 11:19:49,838 - INFO - response: https://duckduckgo.com/ 200 17971
+2024-09-10 11:19:51,421 - INFO - response: https://links.duckduckgo.com/d.js?q=Que+numero+es+mayor+entre+9.9+y+9.11%3F&kl=wt-wt&l=wt-wt&p=&s=0&df=&vqd=4-241759616819681277467156062572247315104&bing_market=wt-WT&ex=-1 200 40998
+2024-09-10 11:20:05,991 - INFO - Query processed by openrouter:mattshumer/reflection-70b:free in 14.56 seconds
+2024-09-10 11:20:05,991 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 11:20:05,991 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 11:20:12,694 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:20:12,695 - INFO - Query processed by api:gpt-4o-mini in 6.70 seconds
+2024-09-10 11:20:12,695 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 11:20:12,695 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 11:20:15,665 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:20:15,666 - INFO - Query processed by api:gpt-4o-mini in 2.97 seconds
+2024-09-10 11:20:15,666 - ERROR - Error processing query with openai:gpt-4o-mini: No se pudo procesar la consulta con el agente seleccionado: openai
+2024-09-10 11:20:15,666 - INFO - Attempting fallback with api:gpt-4o-mini
+2024-09-10 11:20:17,051 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-10 11:20:17,052 - INFO - Query processed by api:gpt-4o-mini in 1.39 seconds
