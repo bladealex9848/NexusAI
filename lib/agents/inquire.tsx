@@ -30,7 +30,7 @@ export async function inquire(
       "inputPlaceholder": "A placeholder text to guide the user's free-form input"
     }
 
-    Important: The "value" field in the options must always be in English, regardless of the user's language.
+    Important: The "value" field in the options must always be in Spanish, regardless of the user's language.
 
     For example:
     {
@@ -49,7 +49,7 @@ export async function inquire(
 
     By providing predefined options, you guide the user towards the most relevant aspects of their query, while the free-form input allows them to provide additional context or specific details not covered by the options.
     Remember, your goal is to gather the necessary information to deliver a thorough and accurate response.
-    Please match the language of the response (question, labels, inputLabel, and inputPlaceholder) to the user's language, but keep the "value" field in English.
+    Please match the language of the response (question, labels, inputLabel, and inputPlaceholder) to the user's language, but keep the "value" field in Spanish.
     `,
     messages,
     schema: inquirySchema
