@@ -257,9 +257,7 @@ async function submit(
       aiState.done(aiState.get())
       streamText.done()
       uiStream.append(
-        <ErrorCard
-          errorMessage={answer || 'An error occurred. Please try again.'}
-        />
+        <ErrorCard errorMessage={answer || 'A ocurrido un error inesperado'} />
       )
     }
 
@@ -359,10 +357,10 @@ export const getUIStateFromAIState = (aiState: Chat) => {
   const chatId = aiState.chatId
   const isSharePage = aiState.isSharePage
 
-    // Ensure messages is an array of plain objects
-    const messages = Array.isArray(aiState.messages) 
-    ? aiState.messages.map(msg => ({...msg})) 
-    : [];
+  // Ensure messages is an array of plain objects
+  const messages = Array.isArray(aiState.messages)
+    ? aiState.messages.map(msg => ({ ...msg }))
+    : []
 
   return messages
     .map((message, index) => {

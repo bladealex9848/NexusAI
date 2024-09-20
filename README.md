@@ -1,245 +1,218 @@
-# Morphic
+# NexusAI
 
-An AI-powered search engine with a generative UI.
+Un motor de búsqueda potenciado por IA con una interfaz de usuario generativa, impulsado por MALLO (MultiAgent LLM Orchestrator).
 
-![capture](/public/capture-240404_blk.png)
+![captura](/public/capture-240404_blk.png)
 
-> [!NOTE]
-> Please note that there are differences between this repository and the official website [morphic.sh](https://morphic.sh). The official website is a fork of this repository with additional features such as authentication, which are necessary for providing the service online. The core source code of Morphic resides in this repository, and it's designed to be easily built and deployed.
+> [!NOTA]
+> Por favor, ten en cuenta que pueden existir diferencias entre este repositorio y el sitio web oficial [nexusai.com](https://nexusai.com). El sitio web oficial es una bifurcación de este repositorio con características adicionales como autenticación, necesarias para proporcionar el servicio en línea. El código fuente principal de NexusAI reside en este repositorio y está diseñado para ser fácilmente construido y desplegado.
 
-## 🗂️ Overview
+## 🗂️ Visión General
 
-- 🛠 [Features](#-features)
-- 🧱 [Stack](#-stack)
-- 🚀 [Quickstart](#-quickstart)
-- 🌐 [Deploy](#-deploy)
-- 🔎 [Search Engine](#-search-engine)
-- ✅ [Verified models](#-verified-models)
+- 🛠 [Características](#-características)
+- 🧱 [Stack Tecnológico](#-stack-tecnológico)
+- 🚀 [Inicio Rápido](#-inicio-rápido)
+- 🌐 [Despliegue](#-despliegue)
+- 🔎 [Motor de Búsqueda](#-motor-de-búsqueda)
+- ✅ [Modelos Verificados](#-modelos-verificados)
+- 🤖 [Estructura de MALLO](#-estructura-de-mallo)
 
-## 🛠 Features
+## 🛠 Características
 
-- Search and answer using GenerativeUI
-- Understand user's questions
-- Search history functionality
-- Share search results ([Optional](https://github.com/miurla/morphic/blob/main/.env.local.example))
-- Video search support ([Optional](https://github.com/miurla/morphic/blob/main/.env.local.example))
-- Get answers from specified URLs
-- Use as a search engine [※](#-search-engine)
-- Support for providers other than OpenAI
-  - Google Generative AI Provider
-  - Azure OpenAI Provider [※](https://github.com/miurla/morphic/issues/13)
-  - Anthropic Provider [※](https://github.com/miurla/morphic/pull/239)
-  - Ollama Provider ([Unstable](https://github.com/miurla/morphic/issues/215))
-- Specify the model to generate answers
-  - Groq API support [※](https://github.com/miurla/morphic/pull/58)
-- Local Redis support
-- SearXNG Search API support with customizable depth (basic or advanced)
-- Configurable search depth (basic or advanced)
-- SearXNG Search API support with customizable depth
+- Búsqueda y respuesta utilizando Interfaz de Usuario Generativa
+- Comprensión avanzada de las preguntas del usuario
+- Funcionalidad de historial de búsquedas
+- Compartir resultados de búsqueda
+- Soporte para búsqueda de videos
+- Obtener respuestas de URLs específicas
+- Usar como motor de búsqueda predeterminado
+- Soporte para múltiples proveedores de IA:
+  - OpenAI
+  - Google Generative AI
+  - Azure OpenAI
+  - Anthropic
+  - Ollama
+  - Groq
+  - Together AI
+  - DeepInfra
+  - DeepSeek
+  - Mistral AI
+  - Cohere
+- Especificar el modelo para generar respuestas
+- Soporte para Redis local y en la nube (Upstash)
+- Soporte para API de búsqueda SearXNG con profundidad personalizable
+- Profundidad de búsqueda configurable (básica o avanzada)
+- Integración con MALLO para razonamiento avanzado y orquestación de múltiples agentes de IA
 
-## 🧱 Stack
+## 🧱 Stack Tecnológico
 
-- App framework: [Next.js](https://nextjs.org/)
-- Text streaming / Generative UI: [Vercel AI SDK](https://sdk.vercel.ai/docs)
-- Generative Model: [OpenAI](https://openai.com/)
-- Search API: [Tavily AI](https://tavily.com/) / [Serper](https://serper.dev) / [SearXNG](https://docs.searxng.org/)
-- Reader API: [Jina AI](https://jina.ai/)
-- Database (Serverless/Local): [Upstash](https://upstash.com/) / [Redis](https://redis.io/)
-- Component library: [shadcn/ui](https://ui.shadcn.com/)
-- Headless component primitives: [Radix UI](https://www.radix-ui.com/)
-- Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Framework de aplicación: [Next.js](https://nextjs.org/)
+- Streaming de texto / UI Generativa: [Vercel AI SDK](https://sdk.vercel.ai/docs)
+- Modelo Generativo Principal: [MALLO (MultiAgent LLM Orchestrator)](https://github.com/bladealex9848/MALLO)
+- API de Búsqueda: [Tavily AI](https://tavily.com/) / [Serper](https://serper.dev) / [SearXNG](https://docs.searxng.org/)
+- API de Lectura: [Jina AI](https://jina.ai/)
+- Base de Datos (Serverless/Local): [Upstash](https://upstash.com/) / [Redis](https://redis.io/)
+- Biblioteca de componentes: [shadcn/ui](https://ui.shadcn.com/)
+- Primitivas de componentes sin cabeza: [Radix UI](https://www.radix-ui.com/)
+- Estilos: [Tailwind CSS](https://tailwindcss.com/)
 
-## 🚀 Quickstart
+## 🚀 Inicio Rápido
 
-### 1. Fork and Clone repo
+### 1. Bifurcar y Clonar el repositorio
 
-Fork the repo to your Github account, then run the following command to clone the repo:
+Bifurca el repositorio a tu cuenta de Github, luego ejecuta el siguiente comando para clonar el repo:
 
 ```
-git clone git@github.com:[YOUR_GITHUB_ACCOUNT]/morphic.git
+git clone git@github.com:bladealex9848/NexusAI.git
 ```
 
-### 2. Install dependencies
+### 2. Instalar dependencias
 
 ```
-cd morphic
+cd NexusAI
 bun install
 ```
 
-### 3. Setting up Upstash Redis
+### 3. Configurar Upstash Redis
 
-Follow the guide below to set up Upstash Redis. Create a database and obtain `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`. Refer to the [Upstash guide](https://upstash.com/blog/rag-chatbot-upstash#setting-up-upstash-redis) for instructions on how to proceed.
+Sigue la guía para configurar Upstash Redis. Crea una base de datos y obtén `UPSTASH_REDIS_REST_URL` y `UPSTASH_REDIS_REST_TOKEN`. Consulta la [guía de Upstash](https://upstash.com/docs/redis/overall/getstarted) para obtener instrucciones detalladas.
 
-If you intend to use a local Redis, you can skip this step.
+Si planeas usar Redis local, puedes omitir este paso.
 
-### 4. Fill out secrets
+### 4. Completar los secretos
 
 ```
 cp .env.local.example .env.local
 ```
 
-Your .env.local file should look like this:
+Edita el archivo `.env.local` con tus claves API y configuraciones.
+
+### 5. Ejecutar la aplicación localmente
+
+#### Usando Bun
 
 ```
-# OpenAI API key retrieved here: https://platform.openai.com/api-keys
-OPENAI_API_KEY=
-
-# Tavily API Key retrieved here: https://app.tavily.com/home
-TAVILY_API_KEY=
-
-# Upstash Redis URL and Token retrieved here: https://console.upstash.com/redis
-UPSTASH_REDIS_REST_URL=
-UPSTASH_REDIS_REST_TOKEN=
-
-## Redis Configuration
-
-This application supports both Upstash Redis and local Redis. To use local Redis:
-
-1. Set `USE_LOCAL_REDIS=true` in your `.env.local` file.
-2. Optionally, set `LOCAL_REDIS_URL` if your local Redis is not running on the default `localhost:6379` or `redis://redis:6379` if you're using docker compose.
-
-To use Upstash Redis:
-
-1. Set `USE_LOCAL_REDIS=false` or leave it unset in your `.env.local` file.
-2. Set `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` with your Upstash credentials.
-
-# SearXNG Configuration
-SEARXNG_API_URL=http://localhost:8080  # Replace with your local SearXNG API URL or docker http://searxng:8080
-SEARCH_API=tavily  #  use searxng, tavily or exa
-SEARXNG_SECRET="" # generate a secret key e.g. openssl rand -base64 32
-SEARXNG_PORT=8080 # default port
-SEARXNG_BIND_ADDRESS=0.0.0.0 # default address
-SEARXNG_IMAGE_PROXY=true # enable image proxy
-SEARXNG_LIMITER=false # can be enabled to limit the number of requests per IP address
-SEARXNG_DEFAULT_DEPTH=basic # Set to 'basic' or 'advanced', only affects SearXNG searches
-SEARXNG_MAX_RESULTS=50 # Maximum number of results to return from SearXNG
-
+bun dev
 ```
 
-### 5. Run app locally
+#### Usando Docker
 
-#### Using Bun
+```
+docker compose up -d
+```
 
-To run the application locally using Bun, execute the following command:
+Visita http://localhost:3000 en tu navegador web.
 
-`bun dev`
+## 🌐 Despliegue
 
-You can now visit http://localhost:3000 in your web browser.
-
-#### Using Docker
-
-To run the application using Docker, use the following command:
-
-`docker compose up -d`
-
-This will start the application in detached mode. You can access it at http://localhost:3000.
-
-## 🌐 Deploy
-
-Host your own live version of Morphic with Vercel or Cloudflare Pages.
+Aloja tu propia versión en vivo de NexusAI con Vercel o Cloudflare Pages.
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
+[![Desplegar con Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbladealex9848%2FNexusAI&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
 
-## 🔎 Search Engine
+## 🔎 Motor de Búsqueda
 
-### Setting up the Search Engine in Your Browser
+### Configurar NexusAI como Motor de Búsqueda en tu Navegador
 
-If you want to use Morphic as a search engine in your browser, follow these steps:
+1. Abre la configuración de tu navegador.
+2. Navega a la sección de configuración del motor de búsqueda.
+3. Añade un nuevo motor de búsqueda con la siguiente URL:
+   `https://nexusai.com/search?q=%s`
+4. Establece NexusAI como tu motor de búsqueda predeterminado.
 
-1. Open your browser settings.
-2. Navigate to the search engine settings section.
-3. Select "Manage search engines and site search".
-4. Under "Site search", click on "Add".
-5. Fill in the fields as follows:
-   - **Search engine**: Morphic
-   - **Shortcut**: morphic
-   - **URL with %s in place of query**: `https://morphic.sh/search?q=%s`
-6. Click "Add" to save the new search engine.
-7. Find "Morphic" in the list of site search, click on the three dots next to it, and select "Make default".
+### Usar SearXNG como Backend de Búsqueda Alternativo
 
-This will allow you to use Morphic as your default search engine in the browser.
+NexusAI soporta SearXNG como backend de búsqueda alternativo. Consulta la sección de configuración en el archivo `config.yaml` para más detalles sobre cómo configurar y personalizar SearXNG.
 
-### Using SearXNG as an Alternative Search Backend
+## ✅ Modelos Verificados
 
-Morphic now supports SearXNG as an alternative search backend with advanced search capabilities. To use SearXNG:
+NexusAI, potenciado por MALLO, soporta una amplia gama de modelos de lenguaje. Aquí se presenta una lista de los modelos verificados y compatibles:
 
-1. Ensure you have Docker and Docker Compose installed on your system.
-2. In your `.env.local` file, set the following variables:
-
-   - NEXT_PUBLIC_BASE_URL=http://localhost:3000 # Base URL for local development
-   - SEARXNG_API_URL=http://localhost:8080 # Replace with your local SearXNG API URL or docker http://searxng:8080
-   - SEARXNG_SECRET=your_secret_key_here
-   - SEARXNG_PORT=8080
-   - SEARXNG_IMAGE_PROXY=true
-   - SEARCH_API=searxng
-   - SEARXNG_LIMITER=false # can be enabled to limit the number of requests per IP
-   - SEARXNG_DEFAULT_DEPTH=basic # Set to 'basic' or 'advanced'
-   - SEARXNG_MAX_RESULTS=50 # Maximum number of results to return from SearXNG
-   - SEARXNG_ENGINES=google,bing,duckduckgo,wikipedia # can be overriden in searxng config
-   - SEARXNG_TIME_RANGE=None # Time range for search results
-   - SEARXNG_SAFESEARCH=0 # Safe search setting
-   - SEARXNG_CRAWL_MULTIPLIER=4 # Multiplier for the number of results to crawl in advanced search
-
-3. Two configuration files are provided in the root directory:
-
-   - `searxng-settings.yml`: This file contains the main configuration for SearXNG, including engine settings and server options.
-   - `searxng-limiter.toml`: This file configures the rate limiting and bot detection features of SearXNG.
-
-4. Run `docker-compose up` to start the Morphic stack with SearXNG included.
-5. SearXNG will be available at `http://localhost:8080` and Morphic will use it as the search backend.
-
-#### Advanced Search Configuration
-
-- `NEXT_PUBLIC_BASE_URL`: Set this to your local development URL (http://localhost:3000) or your production URL when deploying.
-- `SEARXNG_DEFAULT_DEPTH`: Set to 'basic' or 'advanced' to control the default search depth.
-- `SEARXNG_MAX_RESULTS`: Maximum number of results to return from SearXNG.
-- `SEARXNG_CRAWL_MULTIPLIER`: In advanced search mode, this multiplier determines how many results to crawl. For example, if `SEARXNG_MAX_RESULTS=10` and `SEARXNG_CRAWL_MULTIPLIER=4`, up to 40 results will be crawled before filtering and ranking.
-- `SEARXNG_ENGINES`: Comma-separated list of search engines to use.
-- `SEARXNG_TIME_RANGE`: Time range for search results (e.g., 'day', 'week', 'month', 'year', 'all').
-- `SEARXNG_SAFESEARCH`: Safe search setting (0 for off, 1 for moderate, 2 for strict).
-
-The advanced search feature includes content crawling, relevance scoring, and filtering to provide more accurate and comprehensive results.
-
-#### Customizing SearXNG
-
-- You can modify `searxng-settings.yml` to enable/disable specific search engines, change UI settings, or adjust server options.
-- The `searxng-limiter.toml` file allows you to configure rate limiting and bot detection. This is useful if you're exposing SearXNG directly to the internet.
-- If you prefer not to use external configuration files, you can set these options using environment variables in the `docker-compose.yml` file or directly in the SearXNG container.
-
-#### Troubleshooting
-
-- If you encounter issues with specific search engines (e.g., Wikidata), you can disable them in `searxng-settings.yml`:
-
-```yaml
-engines:
-  - name: wikidata
-    disabled: true
-```
-
-- refer to https://docs.searxng.org/admin/settings/settings.html#settings-yml
-
-## ✅ Verified models
-
-### List of models applicable to all:
+### Modelos Generales
 
 - OpenAI
-  - gpt-4o
-  - gpt-4o-mini
-  - gpt-4-turbo
-  - gpt-3.5-turbo
+  - GPT-4
+  - GPT-4 Turbo
+  - GPT-3.5 Turbo
 - Google
-  - Gemini 1.5 pro (Unstable)
+  - Gemini Pro
+  - Gemini Ultra (cuando esté disponible)
 - Anthropic
-  - Claude 3.5 Sonnet
-- Ollama (Unstable)
-  - mistral/openhermes & Phi3/llama3 [※](https://github.com/miurla/morphic/issues/215)
+  - Claude 2
+  - Claude 3 (Opus, Sonnet, Haiku)
+- Cohere
+  - Command
+  - Command-R
+- Mistral AI
+  - Mistral 7B
+  - Mixtral 8x7B
+- Ollama (modelos locales)
+  - Llama 2
+  - Mistral
+  - Phi-2
+- Groq
+  - LLaMA 2 70B
+  - Mixtral 8x7B
+- Together AI
+  - Varios modelos de código abierto
+- DeepInfra
+  - Soporte para múltiples modelos de diferentes proveedores
 
-### List of verified models that can be specified to writers:
+### Modelos Especializados
 
-- [Groq](https://console.groq.com/docs/models)
-  - LLaMA3.1 8b
-  - LLaMA3.1 70B
-  - LLaMA3 8b
-  - LLaMA3 70b
+- Modelos de visión (multimodales)
+  - GPT-4 Vision
+  - Gemini Pro Vision
+  - Claude 3 (con capacidades de visión)
+- Modelos de código
+  - OpenAI Codex
+  - Anthropic Claude (optimizado para tareas de codificación)
+  - GitHub Copilot (integración)
+
+### Modelos de Embeddings
+
+- OpenAI Ada
+- Cohere Embed
+- Mistral Embed
+
+### Modelos de Voz y Audio
+
+- Whisper (OpenAI)
+- Google Speech-to-Text
+
+Esta lista se actualiza regularmente a medida que se verifican y añaden nuevos modelos al ecosistema de NexusAI y MALLO.
+
+## 🤖 Estructura de MALLO
+
+MALLO (MultiAgent LLM Orchestrator) es el núcleo de NexusAI y proporciona las siguientes capacidades:
+
+- Orquestación dinámica de múltiples modelos de lenguaje
+- Evaluación de complejidad de consultas
+- Sistema de caché para respuestas frecuentes
+- Integración con APIs de búsqueda web
+- Manejo de contexto y seguimiento de conversaciones
+- Selección inteligente de agentes basada en el tipo de consulta
+- Capacidad de expansión para nuevos modelos y proveedores
+
+Para más detalles sobre la estructura y funcionamiento de MALLO, consulta la [documentación de MALLO](https://github.com/bladealex9848/MALLO).
+
+## 📚 Documentación
+
+Para obtener información más detallada sobre la configuración, uso y personalización de NexusAI, consulta nuestra [documentación completa](https://docs.nexusai.com).
+
+## 🤝 Contribución
+
+Las contribuciones son bienvenidas. Por favor, lee nuestra [guía de contribución](CONTRIBUTING.md) antes de enviar pull requests.
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## 📞 Contacto
+
+Para soporte o consultas, por favor abre un issue en este repositorio o contacta con nuestro equipo en info@marduk.pro.
+
+---
+
+Desarrollado con ❤️ por el equipo de [Marduk](https://marduk.pro)
