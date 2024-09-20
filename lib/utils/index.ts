@@ -51,7 +51,7 @@ export function getModel(useSubModel = false) {
   }
 
   if (anthropicApiKey) {
-    return anthropic('claude-3-5-sonnet-20240620')
+    return anthropic('claude-3-haiku-20240307')
   }
 
   if (azureApiKey && azureResourceName) {
