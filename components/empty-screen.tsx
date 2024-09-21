@@ -3,20 +3,20 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: 'What is GPT-4o mini?',
-    message: 'What is GPT-4o mini?'
+    heading: '¿Como implementar la IA en la justicia colombiana?',
+    message: '¿Como implementar la IA en la justicia colombiana?'
   },
   {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
+    heading: 'Por qué Nvidia está creciendo rápidamente?',
+    message: 'Por qué Nvidia está creciendo rápidamente?'
   },
   {
-    heading: 'How does the Vercel AI SDK work?',
-    message: 'How does the Vercel AI SDK work?'
+    heading: 'El futuro de la IA',
+    message: 'El futuro de la IA'
   },
   {
-    heading: 'Tesla vs Rivian',
-    message: 'Tesla vs Rivian'
+    heading: 'MALLO MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1',
+    message: 'MALLO MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1'
   }
 ]
 export function EmptyScreen({
