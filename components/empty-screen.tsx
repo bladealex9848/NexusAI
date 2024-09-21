@@ -15,8 +15,8 @@ const exampleMessages = [
     message: 'El futuro de la IA'
   },
   {
-    heading: 'MALLO MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1',
-    message: 'MALLO MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1'
+    heading: 'MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1',
+    message: 'MALLO (MultiAgent LLM Orchestrator) Vs OpenAI o1'
   }
 ]
 export function EmptyScreen({
