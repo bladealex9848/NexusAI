@@ -84,7 +84,7 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
       </form>
     </Section>
   ) : error ? null : (
-    <Section title="Related" separator={true}>
+    <Section title="Relacionado" separator={true}>
       <Skeleton className="w-full h-6" />
     </Section>
   )

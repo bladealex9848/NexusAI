@@ -230,7 +230,7 @@ async function submit(
       const relatedQueries = await querySuggestor(uiStream, processedMessages)
       // Add follow-up panel
       uiStream.append(
-        <Section title="Recomendaciones">
+        <Section title="Hacer un seguimiento">
           <FollowupPanel />
         </Section>
       )
