@@ -106,7 +106,7 @@ export const SearchResultsImageSection: React.FC<
           </DialogTrigger>
           <DialogContent className="sm:max-w-3xl max-h-[80vh] overflow-auto">
             <DialogHeader>
-              <DialogTitle>Search Images</DialogTitle>
+              <DialogTitle>Buscar imágenes</DialogTitle>
               <DialogDescription className="text-sm">{query}</DialogDescription>
             </DialogHeader>
             <div className="py-4">
