@@ -5,7 +5,7 @@ Un motor de búsqueda potenciado por IA con una interfaz de usuario generativa, 
 ![captura](/app/opengraph-image.png)
 
 > [!NOTA]
-> Por favor, ten en cuenta que pueden existir diferencias entre este repositorio y el sitio web oficial [https://nexus-ai-alpha.vercel.app/](https://nexus-ai-alpha.vercel.app/). El sitio web oficial es una bifurcación de este repositorio con características adicionales como autenticación, necesarias para proporcionar el servicio en línea. El código fuente principal de NexusAI reside en este repositorio y está diseñado para ser fácilmente construido y desplegado.
+> Por favor, ten en cuenta que pueden existir diferencias entre este repositorio y el sitio web oficial [https://www.nexusai.es/](https://www.nexusai.es/). El sitio web oficial es una bifurcación de este repositorio con características adicionales como autenticación, necesarias para proporcionar el servicio en línea. El código fuente principal de NexusAI reside en este repositorio y está diseñado para ser fácilmente construido y desplegado.
 
 ## 🗂️ Visión General
 
@@ -118,7 +118,7 @@ Aloja tu propia versión en vivo de NexusAI con Vercel o Cloudflare Pages.
 1. Abre la configuración de tu navegador.
 2. Navega a la sección de configuración del motor de búsqueda.
 3. Añade un nuevo motor de búsqueda con la siguiente URL:
-   `https://nexus-ai-alpha.vercel.app/search?q=%s`
+   `https://www.nexusai.es/search?q=%s`
 4. Establece NexusAI como tu motor de búsqueda predeterminado.
 
 ### Usar SearXNG como Backend de Búsqueda Alternativo
@@ -132,27 +132,26 @@ NexusAI, potenciado por MALLO, soporta una amplia gama de modelos de lenguaje. A
 ### Modelos Generales
 
 - OpenAI
-  - GPT-4
-  - GPT-4 Turbo
-  - GPT-3.5 Turbo
+  - GPT-4o
+  - GPT-4o Mini
 - Google
   - Gemini Pro
   - Gemini Ultra (cuando esté disponible)
 - Anthropic
-  - Claude 2
   - Claude 3 (Opus, Sonnet, Haiku)
 - Cohere
   - Command
   - Command-R
 - Mistral AI
-  - Mistral 7B
-  - Mixtral 8x7B
+  - Mistral nemo
+  - Mixtral large
 - Ollama (modelos locales)
-  - Llama 2
-  - Mistral
-  - Phi-2
+  - Llama 3.1
+  - qwen2
+  - gemma2
+  - Phi-3.5
 - Groq
-  - LLaMA 2 70B
+  - LLaMA 3.1 70B
   - Mixtral 8x7B
 - Together AI
   - Varios modelos de código abierto
@@ -162,7 +161,7 @@ NexusAI, potenciado por MALLO, soporta una amplia gama de modelos de lenguaje. A
 ### Modelos Especializados
 
 - Modelos de visión (multimodales)
-  - GPT-4 Vision
+  - GPT-4o
   - Gemini Pro Vision
   - Claude 3 (con capacidades de visión)
 - Modelos de código
@@ -199,7 +198,7 @@ Para más detalles sobre la estructura y funcionamiento de MALLO, consulta la [d
 
 ## 📚 Documentación
 
-Para obtener información más detallada sobre la configuración, uso y personalización de NexusAI, consulta nuestra [documentación completa](https://docs.nexus-ai-alpha.vercel.app/).
+Para obtener información más detallada sobre la configuración, uso y personalización de NexusAI, consulta nuestra [documentación completa](https://marduk.pro/).
 
 ## 🤝 Contribución
 
