@@ -8,6 +8,7 @@ import Footer from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
 import { Toaster } from '@/components/ui/sonner'
 import { AppStateProvider } from '@/lib/utils/app-state'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -19,7 +20,7 @@ const description =
   'Un motor de búsqueda potenciado por IA con una interfaz de usuario generativa, impulsado por MALLO (MultiAgent LLM Orchestrator)'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nexus-ai-alpha.vercel.app/'),
+  metadataBase: new URL('https://nexusai.es/'),
   title,
   description,
   openGraph: {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@miiura'
+    creator: '@alexanderofadul'
   }
 }
 
@@ -48,6 +49,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={cn('font-sans antialiased', fontSans.variable)}>
         <ThemeProvider
           attribute="class"
