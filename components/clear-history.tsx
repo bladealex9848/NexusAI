@@ -56,7 +56,7 @@ export function ClearHistory({ empty }: ClearHistoryProps) {
               })
             }}
           >
-            {isPending ? <Spinner /> : 'Clear'}
+            {isPending ? <Spinner /> : 'Limpiar'}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
