@@ -10,19 +10,22 @@ import {
   SheetTrigger
 } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, Menu } from 'lucide-react'
+import { ChevronLeft, Menu, Info } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { History as HistoryIcon } from 'lucide-react'
 import { Suspense } from 'react'
-import { HistorySkeleton } from './history-skeleton'
 import { useAppState } from '@/lib/utils/app-state'
 
-type HistoryProps = {
+type AppInfoProps = {
   location: 'sidebar' | 'header'
   children?: React.ReactNode
+  showHistory?: boolean
 }
 
-export function History({ location, children }: HistoryProps) {
+export function AppInfo({
+  location,
+  children,
+  showHistory = false
+}: AppInfoProps) {
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
   const { isGenerating, setIsGenerating } = useAppState()
@@ -52,14 +55,53 @@ export function History({ location, children }: HistoryProps) {
       <SheetContent className="w-64 rounded-tl-xl rounded-bl-xl">
         <SheetHeader>
           <SheetTitle className="flex items-center gap-1 text-sm font-normal mb-2">
-            <HistoryIcon size={14} />
-            Historial
+            <Info size={14} />
+            Información de la Aplicación
           </SheetTitle>
         </SheetHeader>
-        <div className="my-2 h-full pb-12 md:pb-10">
-          <Suspense fallback={<HistorySkeleton />}>{children}</Suspense>
+        <div className="my-2 h-full pb-12 md:pb-10 overflow-y-auto">
+          <Suspense fallback={<div>Cargando...</div>}>
+            {showHistory ? children : <AppInfoContent />}
+          </Suspense>
         </div>
       </SheetContent>
     </Sheet>
+  )
+}
+
+function AppInfoContent() {
+  return (
+    <div className="space-y-4">
+      <section>
+        <h3 className="font-semibold">¿Qué es NexusAI?</h3>
+        <p>
+          NexusAI es un motor de búsqueda potenciado por IA con una interfaz de
+          usuario generativa, impulsado por MALLO (MultiAgent LLM Orchestrator).
+        </p>
+      </section>
+      <section>
+        <h3 className="font-semibold">Uso</h3>
+        <p>
+          Simplemente ingresa tu consulta en la barra de búsqueda y NexusAI te
+          proporcionará respuestas detalladas utilizando múltiples fuentes de
+          información y modelos de IA.
+        </p>
+      </section>
+      <section>
+        <h3 className="font-semibold">Preguntas Frecuentes</h3>
+        <ul className="list-disc pl-5">
+          <li>¿Es gratuito? Sí, NexusAI es gratuito para uso personal.</li>
+          <li>
+            ¿Puedo usarlo como mi motor de búsqueda predeterminado? Sí, puedes
+            configurar NexusAI como tu motor de búsqueda predeterminado en tu
+            navegador.
+          </li>
+          <li>
+            ¿Qué tipos de consultas puedo hacer? Puedes hacer cualquier tipo de
+            consulta, desde preguntas simples hasta análisis complejos.
+          </li>
+        </ul>
+      </section>
+    </div>
   )
 }
